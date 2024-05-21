@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
  get "home/index"
- get 'pages/index', to: 'pages#index'
+ get 'pages', to: 'pages#home'
 end
