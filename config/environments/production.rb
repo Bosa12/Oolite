@@ -16,6 +16,19 @@ Rails.application.configure do
   config.consider_all_requests_local = false
   config.action_controller.perform_caching = true
 
+#   config.action_mailer.delivery_method = :smtp
+# config.action_mailer.smtp_settings = {
+#   address:              'smtp.sendgrid.net',
+#   port:                 587,
+#   domain:               'yourdomain.com',
+#   user_name:            'apikey',
+#   password:             'your_sendgrid_api_key',
+#   authentication:       'plain',
+#   enable_starttls_auto: true
+# }
+# config.action_mailer.default_url_options = { host: 'yourdomain.com' }
+
+
   # Ensures that a master key has been made available in ENV["RAILS_MASTER_KEY"], config/master.key, or an environment
   # key such as config/credentials/production.key. This key is used to decrypt credentials (and other encrypted files).
   # config.require_master_key = true

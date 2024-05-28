@@ -1,10 +1,10 @@
 class ServiceController < ApplicationController
   def project
-    @project = Project.all
+    # @project = Project.all
 
   end
 
   def contact
-    @contact = Contact.new
+    # @contact = Contact.new
   end
 end
