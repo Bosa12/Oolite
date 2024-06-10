@@ -1,6 +1,8 @@
 
 <%= form_with model: @contact, url: contact_path, local: true do |form| %>
-  <div>
+<div class="card-contact ">
+  <div class="card-contact">
+    <div>
       <%= form.label :name %>
       <%= form.text_field :name %>
     </div>
@@ -14,5 +16,7 @@
     </div>
     <div>
       <%= form.submit 'Send Message' %>
+    </div>
+  <% end %>
   </div>
-<% end %>
+</div>
