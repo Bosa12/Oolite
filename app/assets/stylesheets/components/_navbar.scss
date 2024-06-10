@@ -1,18 +1,33 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: rgb(15, 15, 15);
-  margin-top: 5px;
-  font-style: initial;
+.navbar {
+  background: rgb(131, 240, 58);
+  margin-top: px;
+  font-size: 1.2rem;
   display: flex;
-  align-content: end;
 
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+
+.nav-item{
+  display: flex;
+  margin-right: 10px;
+  display: flex;
+
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-  border-radius: 35px;
+.container-fluid {
+  background-color: BFE03E;
+  display: flex;
+  align-items: center;
+}
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+ul {
+
+  margin-top: 0.5rem ;
+  overflow: hidden;
+  justify-content: space-around;
+
 }
