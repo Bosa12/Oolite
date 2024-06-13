@@ -3,90 +3,94 @@
 </div>
 
 
-<div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div class="container-carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag 'casacarros.jpg', alt: '', style: "width: 95vw; height: 463px;" %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag 'carrose2.jpg', alt: '', style: "width: 95vw; height: 463px;" %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag 'dechn.jpg', alt: '', style: "width: 95vw; height: 463px;" %>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= image_tag 'casacarros.jpg', alt: '', style: "width: 95vw; height: 463px;" %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'carrose2.jpg', alt: '', style: "width: 95vw; height: 463px;" %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'dechn.jpg', alt: '', style: "width: 95vw; height: 463px;" %>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
 
-    <div class="row align-items justify-content-end">
-      <hr class="my-4">
-      <div class="col-md-4 me-4">
-        <h5 class="userw-title-text text-center mb-4"></h5>
-        <p class="userw-title-text-s userw-text-just userw-text-line-h justify-content-flex-start">At Oolite Construction, we're dedicated to building dreams from the ground up. With a commitment to quality craftsmanship, innovation, and customer satisfaction, we turn visions into reality, one project at a time.
-          Whether you're dreaming of a new home, a commercial space, or a renovation project, our team of skilled professionals is here to bring your.</p>
-      </div>
-        <div class="col-md-6">
-        <%= image_tag 'dechn.jpg', alt: '', style: "width: 470.67px; height: 387.75px; left:116.33;
-              gap: opx; opacity: opx; border-radius: 5px;" %>
-        </div>
+<div class="row ">
+  <hr class="my-4">
+  <div class="col-md-5 me-4">
+    <h5 class="userw-title-text text-center mb-4"></h5>
+    <p class="text-home">At Oolite Construction, we're dedicated to building dreams from the ground up. With a commitment to quality craftsmanship, innovation, and customer satisfaction, we turn visions into reality, one project at a time.
+      Whether you're dreaming of a new home, a commercial space, or a renovation project, our team of skilled professionals is here to bring your.</p>
+  </div>
+
+  <div class="col-md-5">
+  <%= image_tag 'dechn.jpg', alt: '', style: "width: 600.67px; height: 387.75px; left:116.33;
+        gap: opx; opacity: opx; border-radius: 5px;" %>
+  </div>
+</div>
+
+  <div class="row-service">
+    <div class="col-md-6 Service pt-5">
+      <h1> Service Provided</h1>
+      <%= image_tag 'dechn.jpg', alt: '', style: "width: 400px; height: 460px; left:116.33;
+                      gap: opx; opacity: opx; border-radius: 5px;" %>
+                      <%= link_to 'See More', project_path, class: 'btn btn-primary' %>
     </div>
+    <div class="col-md-6 Galery pt-5">
+      <h1>Gallery</h1>
+      <%= image_tag 'dechn.jpg', alt: '', style: "width: 400px; height: 460px; left:116.33;
+          gap: opx; opacity: opx; border-radius: 5px;" %>
+          <%= link_to 'See More', project_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+
+
+
+  <div class="div">
+    <h3>Why Choose Us</h3>
+  </div>
 
     <div class="row">
-      <div class="col-md-6 Service pt-5">
-        <h1> Service Provided</h1>
-        <%= image_tag 'dechn.jpg', alt: '', style: "width: 371px; height: 411px; left:116.33;
-                        gap: opx; opacity: opx; border-radius: 5px;" %>
-                        <%= link_to 'See More', project_path, class: 'btn btn-primary' %>
+        <div class="card1 ">
+          <div class="col-md">
+            <h3> Free Estimates</h3>
+          </div>
+        </div>
+
+      <div class="card1">
+        <div class="col-md">
+          <h3> High Quality finishing</h3>
+        </div>
       </div>
-      <div class="col-md-6 Galery pt-5">
-        <h1>Gallery</h1>
-        <%= image_tag 'dechn.jpg', alt: '', style: "width: 371px; height: 411px; left:116.33;
-            gap: opx; opacity: opx; border-radius: 5px;" %>
-            <%= link_to 'See More', project_path, class: 'btn btn-primary' %>
+
+      <div class="card1">
+        <div class="col-md">
+          <h3> Frindly and approacheble team</h3>
+        </div>
+      </div>
+
+      <div class="card1">
+          <div class="col-md   ">
+            <h3> Public liability Insurance</h3>
+        </div>
       </div>
     </div>
-
-
-  
-    <div class="div">
-      <h3>Why Choose Us</h3>
-    </div>
-      <div class="row">
-          <div class="card1 ">
-            <div class="col-md">
-              <h3> Free Estimates</h3>
-            </div>
-          </div>
-
-        <div class="card1">
-          <div class="col-md">
-            <h3> High Quality finishing</h3>
-          </div>
-        </div>
-
-        <div class="card1">
-          <div class="col-md">
-            <h3> Frindly and approacheble team</h3>
-          </div>
-        </div>
-
-        <div class="card1">
-            <div class="col-md   ">
-              <h3> Public liability Insurance</h3>
-          </div>
-        </div>
-      </div>
+  </div>
