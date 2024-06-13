@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    
+
   end
 
   def about
@@ -16,10 +16,9 @@ class PagesController < ApplicationController
     # @project = Project.all
   end
 
-  def service
-    # @service = Service.all
+  def project
+    # @project = Project.all
   end
-
   def create
     @contact = Contact.new(params[:contact])
     if @contact.save

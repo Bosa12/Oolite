@@ -1,22 +1,16 @@
+<div class="card-contact">
+  <div class="card-body-contac">
+    <h5 class="card-title-contact">Contact Us</h5>
+    <p class="card-text">We're here to help. Please fill out the form below and we'll get back to you as soon as possible.</p>
+      <form action="https://send.pageclip.co/CkbTf1Wy1rlinUxJF7IEYPVfAIT3PuoJ/Oolite" class="pageclip-form" method="post">
+        <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+        <input type="text" name="name" value="Roscoe Jones" />
+        <input type="email" name="email" value="roscoe@example.com" />
 
-<%= form_with model: @contact, url: contact_path, local: true do |form| %>
-<div class="card-contact ">
-  <div class="card-contact">
-    <div>
-      <%= form.label :name %>
-      <%= form.text_field :name %>
-    </div>
-    <div>
-      <%= form.label :email %>
-      <%= form.email_field :email %>
-    </div>
-    <div>
-      <%= form.label :message %>
-      <%= form.text_area :message %>
-    </div>
-    <div>
-      <%= form.submit 'Send Message' %>
-    </div>
-  <% end %>
+        <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+        <button type="submit" class="pageclip-form__submit">
+          <span>Send</span>
+        </button>
+      </form>
   </div>
 </div>
