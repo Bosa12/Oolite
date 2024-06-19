@@ -1,18 +1,39 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: rgb(15, 15, 15);
-  margin-top: 5px;
-  font-style: initial;
+.navbar {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  font-size: 1.2rem;
   display: flex;
-  align-content: end;
+  direction: rtl;
 
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.nav-item, .nav-item1{
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
+  display: flex;
+  margin-right: 10px;
+  display: flex;
+
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-  border-radius: 35px;
+.container-fluid {
+  background-color: BFE03E;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin-top: 9.5rem ;
+  overflow: hidden;
+  justify-content: space-around;
+}
+.nav-item{
+  text-decoration: none;
+  color: rgb(214, 255, 102);
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-item1{
+  color: white;
 }
