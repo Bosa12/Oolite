@@ -12,6 +12,4 @@ Rails.application.routes.draw do
   get "/contact", to: "pages#contact"
   get "/service", to: "service#index"
   get "/project", to: "project#index"
-  # get "/project/:id", to: "project#show", as: 'project'
-
 end

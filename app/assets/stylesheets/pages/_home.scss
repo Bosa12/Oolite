@@ -1,13 +1,28 @@
 
-// Specific CSS for your home
-.text-home{
-  font-size: 1.6rem;
-  font-family:  "Oswald", sans-serif;
-  font-weight: 400;
-  color: #ffffff;
-  font-style: normal;
+// Specific CSS for your home-page
+.logo {
+  color: white;
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-home {
   display: flex;
-  margin-left: 3.5rem;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+.userw-title-text-s,
+.userw-text-just,
+.userw-text-line-h {
+  color: #ffffff;
+}
+.userw-title-text-s {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
 }
 .contauiner {
   align-items: center;
@@ -15,18 +30,26 @@
   margin-top: 2em;
 }
 
+h1{
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  color: rgb(114, 236, 77);
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+
+}
+
 .btn-primary {
   background-color: rgb(114, 236, 77);
   border-color: #000000;
   color: rgb(12, 11, 11);
-  font-weight: 400;
+  font-weight: 700;
   padding: 0.5em 1em;
   margin-top: 1em;
   display: flex;
-  margin-left: 7.7rem;
-  justify-content: center;
   width: 20%;
-  border-radius: 1.5rem;
+  border-radius: 30px;
 }
 .b1 {
   display: flex;
@@ -53,29 +76,16 @@ h3 {
   width: 274px;
   height: 200px;
   border-radius: 30px;
-  margin-left: 5.5em;
+  margin-left: 6.5em;
   justify-content: center;
   align-items: center;
   margin-top: 3em;
   box-shadow: 60px 60px 60px rgba(0, 0, 0, 0.1);
 }
-.choose{
-  font-family: "Oswald", sans-serif;
-  color: rgb(61, 225, 43);
-  font-size: 2.5rem;
-  display: flex;
-  justify-content: center;
-}
 .front{
   color: black;
 }
 .gall{
-  font-family: "Oswald", sans-serif;
   display: flex;
   margin-left: 7.5rem;
-}
-.serv{
-  font-family: "Oswald", sans-serif;
-  display: flex;
-  margin-left: 1.90rem;
 }

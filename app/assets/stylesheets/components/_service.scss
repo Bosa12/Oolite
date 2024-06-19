@@ -1,79 +1,22 @@
-.text-container{
-  display: flex;
-  align-items: flex-end;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  color: white;
-}
+
+
+
+
+
+
+
+
 .containerproject{
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-left: 3.5rem;
-  padding: 4.5rem 3.5rem 3.5rem;
-}
-.card-service{
-  display: flex;
-  margin-top: 3.5rem;
-  margin-left: 40.2rem;
-  border-radius: 16px;
-  width: 49.5rem;
-  max-width: 100%;
-  min-height: 500px;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
-  overflow: hidden;
-  background-image: url('https://images.unsplash.com/photo-1603562750325-7627768b62da?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-
-}
-.card-service1{
-  display: flex;
-  align-items: flex-start;
-  margin-top: 3.0rem;
-  padding: 4.5rem 3.5rem 3.5rem;
-  border-radius: 16px;
-  margin-left: 3.4rem;
-  width: 49.5rem;
-  max-width: 100%;
-  min-height: 500px;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
-  overflow: hidden;
-  background-image: url('https://images.unsplash.com/photo-1603562750325-7627768b62da?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-}
-
-.title{
-  color: rgb(28, 28, 27);
-  font-family: 'olsavol', sans-serif;
-}
-
-.servi-home{
-  color: whitesmoke;
-  font-family: "Oswald", sans-serif;
-  font-size: 2.9rem;
-}
-.inf-ser{
-  color: whitesmoke;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
-  margin-top: 6.5rem;
-  margin-right: 18.6rem;
-  direction: ltr;
-}
-.fron{
-  color: whitesmoke;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
-}
-.inf-ser1{
-  color: whitesmoke;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
-  margin-top: 6.5rem;
-  display: flex;
-  margin-left: 4.5rem;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  &:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
 }
