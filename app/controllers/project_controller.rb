@@ -14,7 +14,12 @@ class ProjectController < ApplicationController
   def create
     @project = Project.new(project_params)
     if @project.save
-      redirect_to project_path(@project)
+      if params[:images]
+        params[:images].each do |image|
+          @project.images.create(image: image)
+        end
+      end
+      redirect_to @project, notice: 'Projeto criado com sucesso.'
     else
       render :new
     end
@@ -22,6 +27,6 @@ class ProjectController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :description, :project_type_id, images_attributes: [:file])
+    params.require(:project).permit(:name, images_attributes: [:id, :url, :_destroy])
   end
 end
