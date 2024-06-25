@@ -13,11 +13,11 @@ class PagesController < ApplicationController
   end
 
   def service
-    # @project = Project.all
+     @project = Project.all
   end
 
   def project
-    # @project = Project.all
+     @project = Project.all
   end
   def create
     @contact = Contact.new(params[:contact])
