@@ -5,6 +5,12 @@
   grid-template-columns: repeat(3, 1fr);
   color: white;
 }
+.insid{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+
+}
 .containerproject{
   display: flex;
   align-items: center;
@@ -15,9 +21,9 @@
 .card-service{
   display: flex;
   margin-top: 3.5rem;
-  margin-left: 40.2rem;
+  margin-left: 1.2rem;
   border-radius: 16px;
-  width: 49.5rem;
+  width: 50.5rem;
   max-width: 100%;
   min-height: 500px;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
@@ -28,9 +34,9 @@
   background-size: cover;
 
 }
+
 .card-service1{
   display: flex;
-  align-items: flex-start;
   margin-top: 3.0rem;
   padding: 4.5rem 3.5rem 3.5rem;
   border-radius: 16px;
@@ -45,7 +51,6 @@
   background-image: url('https://images.unsplash.com/photo-1603562750325-7627768b62da?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
 }
-
 .title{
   color: rgb(28, 28, 27);
   font-family: 'olsavol', sans-serif;
@@ -56,14 +61,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 2.9rem;
 }
-.inf-ser{
-  color: whitesmoke;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
-  margin-top: 6.5rem;
-  margin-right: 18.6rem;
-  direction: ltr;
-}
+
 .fron{
   color: whitesmoke;
   font-family: "Oswald", sans-serif;
@@ -73,7 +71,4 @@
   color: whitesmoke;
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
-  margin-top: 6.5rem;
-  display: flex;
-  margin-left: 4.5rem;
 }
