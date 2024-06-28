@@ -1,7 +1,6 @@
 class ServiceController < ApplicationController
   def project
      @project = Project.all
-
   end
 
   def contact

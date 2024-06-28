@@ -36,6 +36,14 @@
 <div class="container">
   <div class="row">
     <!-- Coluna para a lista de serviços -->
+    <!-- Coluna para o card com a imagem -->
+    <div class="col-6">
+      <div class="card-service1">
+        <div class="card-content">
+          <h2>Outside</h2>
+        </div>
+      </div>
+    </div>
     <div class="col-5">
       <ul class = "inf-ser1">
         <li>Block Paving</li>
@@ -53,14 +61,6 @@
         <li>Wall Build/Well Refurbishment</li>
       </ul>
     </div>
-    <!-- Coluna para o card com a imagem -->
-    <div class="col-6">
-      <div class="card-service1">
-        <div class="card-content">
-          <h2>Outside</h2>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 <br class="my-4">
@@ -71,15 +71,15 @@
   <div class="row">
     <div class="col-4">
       <%= image_tag 'cozinha.jpg', alt: '', style: "width: 400px; height: 480px; border-radius: 15px;" %>
-      <%= link_to 'See More', project_path, class: 'btn btn-primary'%>
+      <%= link_to 'See More', projects_path, class: 'btn btn-primary'%>
     </div>
     <div class="col-4">
       <%= image_tag 'cozinha.jpg', alt: '', style: "width: 400px; height: 480px; border-radius: 15px;" %>
-          <%= link_to 'See More', project_path, class: 'btn btn-primary'%>
+          <%= link_to 'See More', projects_path, class: 'btn btn-primary'%>
     </div>
     <div class="col-4">
       <%= image_tag 'cozinha.jpg', alt: '', style: "width: 400px; height: 480px; border-radius: 15px;" %>
-            <%= link_to 'See More', project_path, class: 'btn btn-primary'%>
+            <%= link_to 'See More', projects_path, class: 'btn btn-primary'%>
     </div>
   </div>
 </div>

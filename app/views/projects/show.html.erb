@@ -1,0 +1,12 @@
+<div class="logo">
+  <%= image_tag 'logo.jpg', alt: '', style: "width: 12vw; height: 100%; border-radius: 10px;" %>
+</div>
+<div class="project-detail">
+  <% if @project.images.attached? %>
+    <% @project.images.each do |image| %>
+      <%= image_tag url_for(image), alt: @project.name, class: "fotos-project" %>
+    <%end%>
+  <% end %>
+  <p><%= @project.description %></p>
+  <p><%= @project.project_type.name%></p>
+</div>
