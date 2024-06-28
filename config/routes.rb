@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   get "/about", to: "pages#about"
   get "/contact", to: "pages#contact"
   get "/service", to: "service#index"
-  get "/project", to: "project#index"
+  # get "/project", to: "project#index"
+
+  resources :projects, only: [:index, :show, :new, :create]
   # get "/project/:id", to: "project#show", as: 'project'
 
 end

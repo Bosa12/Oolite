@@ -10,21 +10,21 @@ projects = [
   {
     name: "Kitchen Refurbishment",
     description: "Upgrade your kitchen with modern, stylish renovations.",
-    project_type: ProjectType.find_by(name: 'Kitchen Refurbishment'),
-    images: ["https://res.cloudinary.com/dfp6xzba7/image/upload/samples/animals/cat.jpg"]
+    project_type_id: ProjectType.find_by(name: 'Kitchen Refurbishment').id,
+    images: ["https://res.cloudinary.com/dfp6xzba7/image/upload/samples/animals/cat.jpg","https://images.unsplash.com/photo-1603562750325-7627768b62da?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
   },
 
   {
     name: "Bathroom Refurbishment",
     description: "Upgrade your bathroom with modern, stylish renovations.",
-    project_type: ProjectType.find_by(name: 'Bathroom Refurbishment'),
-    images: ["https://res.cloudinary.com/dfp6xzba7/image/upload/samples/animals/cat.jpg"]
+    project_type_id: ProjectType.find_by(name: 'Bathroom Refurbishment').id,
+    images: ["https://res.cloudinary.com/dfp6xzba7/image/upload/samples/animals/cat.jpg",'https://images.unsplash.com/photo-1603562750325-7627768b62da?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D']
   },
   {
     name: "Renovation and Refurbishment",
     description: "Upgrade your home with modern, stylish renovations.",
-    project_type: ProjectType.find_by(name: 'Renovation and Refurbishment'),
-    images: ["https://res.cloudinary.com/dfp6xzba7/image/upload/samples/animals/cat.jpg"]
+    project_type_id: ProjectType.find_by(name: 'Renovation and Refurbishment').id,
+    images: ["https://res.cloudinary.com/dfp6xzba7/image/upload/samples/animals/cat.jpg",'https://images.unsplash.com/photo-1603562750325-7627768b62da?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D']
 
   }
 
@@ -41,8 +41,10 @@ projects.each do |project_data|
   project = Project.create!(
     name: project_data[:name],
     description: project_data[:description],
-    project_type: project_data[:project_type]
+    project_type_id: project_data[:project_type_id]
   )
+
+
 
   puts "Creating images for project #{project.name}..."
   images.each do |image_url|
