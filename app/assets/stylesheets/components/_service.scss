@@ -5,12 +5,6 @@
   grid-template-columns: repeat(3, 1fr);
   color: white;
 }
-.insid{
-  color: white;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.3rem;
-
-}
 .containerproject{
   display: flex;
   align-items: center;
@@ -32,7 +26,6 @@
   overflow: hidden;
   background-image: url('https://images.unsplash.com/photo-1603562750325-7627768b62da?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
-
 }
 
 .card-service1{
@@ -70,5 +63,13 @@
 .inf-ser1{
   color: whitesmoke;
   font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin-left: 8.5rem;
+
+}
+.insid{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+
 }

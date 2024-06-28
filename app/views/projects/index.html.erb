@@ -1,0 +1,13 @@
+<div class="logo">
+  <%= image_tag 'logo.jpg', alt: '', style: "width: 12vw; height: 100%; border-radius: 10px;" %>
+</div>
+<h1>Projects</h1>
+<% @projects.each do |project| %>
+  <div class= "project-card">
+    <% if project.images.attached? %>
+      <%= image_tag project.images.first, alt: project.name %>
+    <% end %>
+    <h2><%= link_to project.name, project_path(id: project.id) %></h2>
+    <p><%= project.category %></p>
+  </div>
+<% end %>
