@@ -1,25 +1,28 @@
-.project-detail{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  img{
-    width: 200px;
-    height: 200px;
+.card-proj {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(232, 6, 6, 0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* Bordas arredondadas */
     margin: 10px;
-  }
-}
-.project-card{
-  display: flex;
-  
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  img{
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+    padding: 20px;
+    img{
+      width: 35.0rem;
+      height: 400px;
+      margin: 10px;
+    }
+
   }
 
-}
+  .project-detail:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .fotos-project {
+    width: 100%; /* Faz as imagens ocuparem toda a largura do card */
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 15px;
+  }
+
+  .project-detail p {
+    margin: 10px 0;
+  }
