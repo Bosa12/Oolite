@@ -9,7 +9,7 @@
           <div class="card-proj">
             <%= image_tag url_for(image), alt: @project.name, class: "fotos-project" %>
             <div class="card-body">
-              <p><%= @project.description %></p>
+              <p><% @project.description %></p>
               <p><%= @project.project_type.name %></p>
 
             </div>
