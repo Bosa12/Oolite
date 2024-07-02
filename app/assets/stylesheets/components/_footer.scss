@@ -10,8 +10,8 @@
   display: inline-block;
   background: rgb(214, 255, 102);
   text-align: center;
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 3.2rem;
+  font-weight: 400;
   text-decoration: underline;
 }
 
@@ -42,8 +42,11 @@
 
 .footer-distributed h3{
   color:  #000000;
-  font: normal 36px 'Open Sans', cursive;
+  font: normal 4.0rem "oswald", sans-serif;
   margin: 0;
+  display: flex;
+  justify-content: flex-start;
+
 }
 
 .footer-distributed h3 span{
@@ -56,6 +59,7 @@
   color:  #000000;
   margin: 20px 0 12px;
   padding: 0;
+  font-size: 1.7rem;
 }
 
 .footer-distributed .footer-links a{
@@ -93,13 +97,14 @@
 }
 
 .footer-distributed .footer-center i.fa-envelope{
-  font-size: 17px;
+  font-size: 18px;
   line-height: 38px;
 }
 
 .footer-distributed .footer-center p{
   display: inline-block;
   color: #000000;
+  font-size: 1.5rem;
   font-weight:400;
   vertical-align: middle;
   margin:0;
@@ -108,7 +113,7 @@
 .footer-distributed .footer-center p span{
   display:block;
   font-weight: normal;
-  font-size:14px;
+  font-size:1.4rem;
   line-height:2;
 }
 
@@ -122,7 +127,7 @@
   font-weight:300;
   font-size: 20px;
   left: 0;
-  color: #fff;
+  color: #000000;
   display: inline-block;
   padding-right: 5px;
 }
@@ -139,16 +144,16 @@
 
 .footer-distributed .footer-company-about{
   line-height: 20px;
-  color:  #92999f;
-  font-size: 13px;
+  color:  #000000;
+  font-size: 14px;
   font-weight: normal;
   margin: 0;
 }
 
 .footer-distributed .footer-company-about span{
   display: block;
-  color:  #ffffff;
-  font-size: 14px;
+  color:  #000000;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -162,7 +167,7 @@
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color:  #33383b;
+  // background-color:  #e1e9ef;
   border-radius: 2px;
 
   font-size: 20px;

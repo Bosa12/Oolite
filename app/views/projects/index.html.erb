@@ -8,6 +8,6 @@
       <%= image_tag project.images.first, alt: project.name %>
     <% end %>
     <h2><%= link_to project.name, project_path(id: project.id) %></h2>
-    <p><%= project.category %></p>
+    <p><% project.category %></p>
   </div>
 <% end %>
