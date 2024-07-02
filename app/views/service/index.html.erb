@@ -4,84 +4,86 @@
 
 <div class="container">
   <div class="row">
-    <!-- Coluna para a lista de serviços -->
-    <div class="col-5">
-      <ul class = "insid">
-        <li>Painting and decorating</li>
-        <li>Plastering / skimming</li>
-        <li>Kitchen refurbishment</li>
-        <li>Bathroom refurbishment</li>
-        <li>Ceiling / wall repairs</li>
-        <li>Coving install</li>
-        <li>Architrave install</li>
-        <li>Carpet supply and fit</li>
-        <li>Garage conversion</li>
-        <li>Electrical work as part of a project</li>
-        <li>Plumbing work as part of a project</li>
-        <li>Window supply and fit</li>
-        <li>Front door supply and fit</li>
-        <li>Composite</li>
-      </ul>
-    </div>
-    <!-- Coluna para o card com a imagem -->
-    <div class="col-6">
-      <h2>Inside</h2>
-      <div class="card-service">
-        <div class="card-content">
+    <div class="col-12 d-flex">
+      <div class="col-6">
+          <div class="card-content">
 
+          </div>
+        <div class="card-service">
         </div>
+      </div>
+      <div class="col-6">
+        <h2>Inside</h2>
+        <ul class="insid">
+          <li>Painting and decorating</li>
+          <li>Plastering / skimming</li>
+          <li>Kitchen refurbishment</li>
+          <li>Bathroom refurbishment</li>
+          <li>Ceiling / wall repairs</li>
+          <li>Coving install</li>
+          <li>Architrave install</li>
+          <li>Carpet supply and fit</li>
+          <li>Garage conversion</li>
+          <li>Electrical work as part of a project</li>
+          <li>Plumbing work as part of a project</li>
+          <li>Window supply and fit</li>
+          <li>Front door supply and fit</li>
+          <li>Composite</li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
 <div class="container">
   <div class="row">
-    <!-- Coluna para a lista de serviços -->
-    <!-- Coluna para o card com a imagem -->
-    <div class="col-6">
-      <div class="card-service1">
-        <div class="card-content">
-          <h2>Outside</h2>
+    <div class="col-12 d-flex">
+      <div class="col-6">
+        <h2 class= "out" >Outside</h2>
+        <ul class="inf-ser1">
+          <li>Block Paving</li>
+          <li>Cabin Instal</li>
+          <li>Cladding</li>
+          <li>Decking</li>
+          <li>Driveway Install</li>
+          <li>Exterio Wall Repair</li>
+          <li>Fence Install</li>
+          <li>Gate Instal</li>
+          <li>Path Install/ Patio Install</li>
+          <li>Pergola Install/ Pier Install</li> <!-- Corrigido fechamento da tag -->
+          <li>Render/ Rumble Strip Install</li>
+          <li>Small Extension</li>
+          <li>Wall Build/Well Refurbishment</li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <div class="card-service1">
+          <div class="card-content">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-5">
-      <ul class = "inf-ser1">
-        <li>Block Paving</li>
-        <li>Cabin Instal</li>
-        <li>Cladding</li>
-        <li>Decking</li>
-        <li>Driveway Install</li>
-        <li>Exterio Wall Repair</li>
-        <li>Fence Install</li>
-        <li>Gate Instal</li>
-        <li>Path Install/ Patio Install</li>
-        <li> Pergola Install/ Pier Install<li>
-        <li>Render/ Rumble Strip Install</li>
-        <li>Small Extension</li>
-        <li>Wall Build/Well Refurbishment</li>
-      </ul>
     </div>
   </div>
 </div>
 <br class="my-4">
 
 <h3 class="servi-home">Some of our past Projects</h3>
-<br class="my-4">
+<br class="my-5">
 <div class="containerproject">
   <div class="row">
-    <div class="col-4">
-      <%= image_tag 'cozinha.jpg', alt: '', style: "width: 400px; height: 480px; border-radius: 15px;" %>
-      <%= link_to 'See More', projects_path, class: 'btn btn-primary'%>
-    </div>
-    <div class="col-4">
-      <%= image_tag 'cozinha.jpg', alt: '', style: "width: 400px; height: 480px; border-radius: 15px;" %>
-          <%= link_to 'See More', projects_path, class: 'btn btn-primary'%>
-    </div>
-    <div class="col-4">
-      <%= image_tag 'cozinha.jpg', alt: '', style: "width: 400px; height: 480px; border-radius: 15px;" %>
-            <%= link_to 'See More', projects_path, class: 'btn btn-primary'%>
-    </div>
+    <% @projects.each do |project| %>
+      <div class="col-6">
+        <div class="card-proj">
+          <div class="containerproject">
+            <% if project.images.attached? %>
+              <%= image_tag project.images.first, alt: project.name %>
+            <% end %>
+            <h2><%= link_to project.name, project_path(id: project.id) %></h2>
+            <p><%= project.category %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
+
 <br class="my-4">
