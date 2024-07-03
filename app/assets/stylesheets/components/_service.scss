@@ -6,10 +6,11 @@
   color: white;
 }
 .containerproject{
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 4.5rem 3.5rem 3.5rem;
   border-radius: 16px;
 }
@@ -27,6 +28,11 @@
   overflow: hidden;
   background-image: url('https://images.unsplash.com/photo-1603562750325-7627768b62da?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
+  transition: transform 0.3s ease; // Adiciona uma transição suave
+
+  &:hover {
+    transform: scale(1.05); // Aumenta o tamanho do card em 5% ao passar o mouse
+  }
 }
 
 .card-service1{
@@ -44,6 +50,37 @@
   overflow: hidden;
   background-image: url('https://images.unsplash.com/photo-1603562750325-7627768b62da?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
+}
+.card-servi{
+  background-color: rgb(41, 39, 39);
+  box-shadow: 0 4px 8px 0 rgba(255, 254, 249, 0.2);
+  display: flex;
+  display: flex;
+  transition: 5s;
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: 10px;
+  padding: 20px;
+  margin-left: 0.1rem;
+  width: 400px;
+  height: 500px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(0.8);
+  }
+  img{
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+    bottom: 10px;
+    left: 0.9rem;
+    width: 95%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+
 }
 .title{
   color: rgb(28, 28, 27);

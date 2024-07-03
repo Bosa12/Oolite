@@ -1,21 +1,25 @@
 <div class="navbar navbar-expand-sm navbar-dark  shadow-sm" id="navbar" style="height: 70px;">
   <div class="container-fluid">
     <nav>
-
-      <ul class="navbar navbar-light ">
-        <li class="nav-item1">
-          <%= link_to 'Contact', contact_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Projects', projects_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item1">
-          <%= link_to 'Services Provided', service_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Home', root_path, class: 'nav-link active', 'aria-current': 'page' %>
-        </li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar navbar-light ml-auto ">
+          <li class="nav-item1">
+            <%= link_to 'Contact', contact_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Projects', projects_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item1">
+            <%= link_to 'Services Provided', service_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Home', root_path, class: 'nav-link active', 'aria-current': 'page' %>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 </div>

@@ -1,0 +1,10 @@
+<h1> Gallery</h1>
+<div class="card-gallery">
+  <% if @project&.images&.attached? %>
+    <% @project.images.each do |image| %>
+      <div class="card-proj">
+        <%= image_tag url_for(image), alt: @project.name, class: "fotos-project" %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

@@ -71,17 +71,18 @@
 <div class="containerproject">
   <div class="row">
     <% @projects.each do |project| %>
-      <div class="col-6">
-        <div class="card-proj">
-          <div class="containerproject">
-            <% if project.images.attached? %>
-              <%= image_tag project.images.first, alt: project.name %>
-            <% end %>
-            <h2><%= link_to project.name, project_path(id: project.id) %></h2>
-            <p><%= project.category %></p>
+        <div class="col-4">
+          <div class="card-servi">
+            <div class="containerproject">
+              <% if project.images.attached? %>
+                <%= image_tag project.images.first, alt: project.name %>
+              <% end %>
+              <p><%= project.category %></p>
+            </div>
           </div>
+          <!-- O link agora está dentro da div col-4, mas fora do card-servi -->
+          <h2><%= link_to project.name, project_path(id: project.id) %></h2>
         </div>
-      </div>
     <% end %>
   </div>
 </div>

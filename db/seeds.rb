@@ -18,7 +18,7 @@ projects = [
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571784/20221108_123712_zdgjqp.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571779/20220217_161209_2_macvzr.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571777/20220217_160709_iqatbq.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571769/20220216_083019_ipqcs1.jpg",]
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571769/20220216_083019_ipqcs1.jpg",]
   },
 
   {
@@ -26,28 +26,28 @@ projects = [
     description: "Upgrade your bathroom with modern, stylish renovations.",
     project_type_id: ProjectType.find_by(name: 'Bathroom Refurbishment').id,
     images: ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571857/20160930_130609_wtzdnn.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571852/20160106_123930_wxmifn.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571849/20160930_130557_a9jji1.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571830/IMG-20240507-WA0000_uqv4li.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571814/20240609_173822_wzm0no.jpg",]
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571852/20160106_123930_wxmifn.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571849/20160930_130557_a9jji1.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571830/IMG-20240507-WA0000_uqv4li.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571814/20240609_173822_wzm0no.jpg",]
   },
   {
     name: "Renovation and Refurbishment",
     description: "Upgrade your home with modern, stylish renovations.",
     project_type_id: ProjectType.find_by(name: 'Renovation and Refurbishment').id,
     images: ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/20240609_174300_rxmbbj.jpg",
-            'https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174130_s8jxbq.jpg',
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174044_tiuyts.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571824/20240609_173934_siy3ya.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571822/20240609_174027_a40mvn.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571817/20240609_173852_bvelqq.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571806/20231208_164850_x9rdds.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571805/20240307_073545_zd3um0.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571793/20221018_105157_wmwtwb.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571782/20220519_172244_meerxa.jpg",
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg",]
+             'https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174130_s8jxbq.jpg',
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174044_tiuyts.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571824/20240609_173934_siy3ya.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571822/20240609_174027_a40mvn.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571817/20240609_173852_bvelqq.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571806/20231208_164850_x9rdds.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571805/20240307_073545_zd3um0.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571793/20221018_105157_wmwtwb.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571782/20220519_172244_meerxa.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg",]
 
   }
 
