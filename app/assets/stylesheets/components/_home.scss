@@ -5,17 +5,35 @@
   color: #ffffff;
   font-style: normal;
   display: flex;
-  margin-left: 3.5rem;
+  margin-top: 4.4rem;
+  margin-left: 6.5rem;
+  padding: 22px 22px 22px 22px;
+  background-color: #FFFFFF0D;
+  border-style: solid;
+  border-width: 4px 5px 5px 5px;
+  border-color: #FFFFFF40;
+  border-radius: 12px 5px 12px 5px;
+}
+
+.carousel-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25.5rem;
+  border-style: solid;
+  padding: 22px 22px 22px 22px;
+  object-fit: cover;
+  background-color: rgb(114, 236, 77);
+  border-style: solid;
+  border-width: 4px 5px 5px 5px;
+  border-color: rgb(114, 236, 77);
+  border-radius: 12px 5px 12px 5px;
 }
 .text-logo{
-  font-size: 1.5rem ;
+  font-size: 1.2rem ;
   font-family: "Oswald", sans-serif;
 }
-.contauiner {
-  align-items: center;
-  display: flex;
-  margin-top: 2em;
-}
+
 .btn-primary {
   background-color: rgb(114, 236, 77);
   border-color: #000000;
@@ -59,14 +77,12 @@ h3 {
   align-items: center;
   margin-top: 3em;
   box-shadow: 60px 60px 60px rgba(0, 0, 0, 0.1);
-
   }
  .card1 img{
   margin-bottom: 1.0rem;
   margin-left: 6.0rem;
   display: flex;
   align-items: center;
-
  }
 .choose{
   font-family: "Oswald", sans-serif;
@@ -74,6 +90,7 @@ h3 {
   font-size: 2.5rem;
   display: flex;
   justify-content: center;
+  margin-top: 3.5rem;
 }
 .front{
   color: black;
@@ -89,8 +106,6 @@ h3 {
   margin-left: 1.90rem;
 }
 
-
-
 .col-md-5{
   margin-top: 1.5rem;
   margin-left: 4.5rem;
@@ -101,5 +116,14 @@ h3 {
   margin-top: 1.5rem;
   margin-left: 12.5rem;
   display: flex;
-
+}
+.img-hom{
+  display: flex;
+  // margin-left: 53.5rem;
+  // margin-top: -20rem;
+}
+@media (max-width: 768px) {
+  .row-service .Service, .row-service .Galery {
+    padding-top: 2rem; /* Menos espaço no topo em telas menores */
+  }
 }

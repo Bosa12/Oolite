@@ -22,9 +22,9 @@ projects = [
   },
 
   {
-    name: "Bathroom Refurbishment",
+    name: "Pyrford Flat Refurbishment",
     description: "Upgrade your bathroom with modern, stylish renovations.",
-    project_type_id: ProjectType.find_by(name: 'Bathroom Refurbishment').id,
+    project_type_id: ProjectType.find_by(name: 'Pyrford Flat Refurbishment').id,
     images: ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571857/20160930_130609_wtzdnn.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571852/20160106_123930_wxmifn.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571849/20160930_130557_a9jji1.jpg",
@@ -79,3 +79,32 @@ projects.each do |project_data|
 end
 
 puts "Seeds created successfully!"
+
+image.destroy_all
+
+image_urls =[
+  "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571805/20240307_073545_zd3um0.jpg",
+  "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571793/20221018_105157_wmwtwb.jpg",
+  "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
+  "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
+  "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571782/20220519_172244_meerxa.jpg",
+  "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jp,",
+]
+image_urls.each do |url|
+  begin
+    file = URI.open(url)
+    unless Image.exists?(title: "Image from #{url}")
+      image = Image.create(title: "Image from #{url}")
+      image.file.attach(io: file, filename: File.basename(URI.parse(url).path))
+      puts "Created image with ID: #{image.id}"
+    else
+      puts "Image from #{url} already exists."
+    end
+  rescue => e
+    puts "Failed to create image from #{url}: #{e.message}"
+  ensure
+    file.close if file
+  end
+end
+
+puts "Seeding complete!"

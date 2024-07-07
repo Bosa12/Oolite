@@ -1,0 +1,27 @@
+.card-servi{
+  background-color: #FFFFFF0D; // Cor de fundo única e semi-transparente
+  box-shadow: 0 4px 8px 0 rgba(255, 254, 249, 0.2);
+  display: flex;
+  transition: transform 0.1s ease; // Transição única e específica
+  border-radius: 12px 5px 12px; // Valor único para bordas arredondadas
+  margin: 10px;
+  margin-left: 0.0rem;
+  width: 450px;
+  height: 500px;
+  padding: 3px 0px 0px 3px;
+  border-style: solid;
+  border-width: 8px 8px 8px 8px;
+  border-color: #FFFFFF40;
+
+  img{
+    display: block;
+    position: absolute;
+    margin-left: 20.0rem;
+    top: 0.4rem;
+    width: 438px;
+    height: 491px;
+    object-fit: fill;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+  }
+}
