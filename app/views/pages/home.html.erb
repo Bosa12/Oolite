@@ -1,5 +1,5 @@
 <div class="logo">
-  <%= image_tag 'logo.jpg', alt: '', style: "width: 12vw; height: 100%; border-radius: 10px;" %>
+  <%= image_tag 'logo.jpg', alt: '', style: "width: 20vw; height: 100%; border-radius: 10px;" %>
   <h2 class= "text-logo"> <strong>Providing Building Services for the Woking and Surrounding Areas.</strong></h2>
 </div>
 <div class="container-carousel">
@@ -8,8 +8,9 @@
 
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <%= image_tag 'kitchen-6916200_1920.jpg', alt: '', style: "width: 95vw; height: 500px;" %>
+      <div class="carousel-item active col-5">
+        <%= image_tag "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1720101942/20220216_083009_usglz4.jpg", alt: '', style: "width: 100%; height: 500px; object-fit: cover;" %>
+
       </div>
     </div>
   </div>
@@ -23,65 +24,58 @@
       The company was set up 10 years ago to purchase and develop its own properties, which we did, and now either sold or rented out.
       Things have evolved, and we now provide services to the local community, with many projects under our belts.
       We have a small select team, who are all very approachable friendly and professional.
-      The core of the team is Ashley and I, and we have a small trusted select few subtractors that we work with when necessary (Electrician, plumber, roofer, labourer, waste disposal, landscapers, window/door specialist, carpet fitter)
-      All are projects are initially started with a site visit, where we discuss your vision, and how to make it happen. </p>
+       </p>
   </div>
-    <%= image_tag "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg",alt: '', style: "width: 550px; height: 550px; left:116.33;
-                gap: opx; opacity: opx; border-radius: 15px;" %>
+      <%= image_tag "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg",
+                     alt: '', style: "width: 600px; height: 550px; gap: 0px; opacity: 1; border-radius: 30px; margin-right: 20px;" %>
 </div>
+
 
   <div class="row-service">
     <div class="col-md-6 Service pt-5">
-      <h1 class= "serv"> Service Provided</h1>
+      <h1 class= "serv"> Service Provided </h1>
       <%= image_tag 'dechn.jpg', alt: '', style: "width: 400px; height: 460px; left:116.33;
                     gap: opx; opacity: opx; border-radius: 5px;" %>
+
                     <%= link_to 'See More', projects_path, class: 'btn btn-primary'%>
     </div>
     <div class="col-md-6 Galery pt-5">
       <h1 class="gall">Gallery</h1>
-      <%= image_tag 'https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571885/path12_i13jsg.jpg', alt: '', style: "width: 400px; height: 460px; left:116.33;
-                    gap: opx; opacity: opx; border-radius: 5px;" %>
+     <%= image_tag 'https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571885/path12_i13jsg.jpg', alt: '', class: 'img-home', style: "width: 400px; height: 460px; left:116.33px; gap: 0px; opacity: 1; border-radius: 5px;" %>
                     <%= link_to 'Gallery', gallery_path, class: 'btn btn-primary' %>
     </div>
   </div>
+
   <div class="choose">
     <h1>Why Choose Us</h1>
   </div>
-    <div class="row">
-        <div class="card1 ">
-          <div class="col-md">
-            <%= image_tag'image 13.jpg' %>'
-            <h3 class="front"> Free Estimates</h3>
-          </div>
-        </div>
-
-    <div class="card1">
-      <div class="col-md">
-        <%= image_tag'image 14.jpg' %>
-        <h3 class="front"> High Quality finishing</h3>
-      </div>
-    </div>
-
-    <div class="card1">
-      <div class="col-md">
-      <%= image_tag'image 7.jpg'%>
-        <h3 class="front"> Frindly and approacheble team</h3>
-      </div>
-    </div>
-
-      <div class="card1">
-          <div class="col-md   ">
-            <%= image_tag'image 8.png'%>
-            <h3 > Public liability Insurance</h3>
-        </div>
-      </div>
+<div class="row">
+  <div class="card1">
+    <div class="col-md">
+      <%= image_tag 'image 13.jpg' %>
+      <h3 class="front">Free Estimates</h3>
     </div>
   </div>
 
-<%# The core of the team is Ashley and I, and we have a small trusted select few subtractors that we work with when necessary (Electrician, plumber, roofer, labourer, waste disposal, landscapers, window/door specialist, carpet fitter)
-All are projects are initially started with a site visit, where we discuss your vision, and how to make it happen.
-We specialise in full refurbishments, however we can-do one-off areas of your homes, whether it's a new kitchen, bathroom or anything else you desire.
-Landscaping is another forte, and we have done numerous garden projects to date.
+  <div class="card1">
+    <div class="col-md">
+      <%= image_tag 'image 14.jpg' %>
+      <h3 class="front">High Quality finishing</h3>
+    </div>
+  </div>
 
+  <div class="card1">
+    <div class="col-md">
+      <%= image_tag 'image 7.jpg' %>
+      <h3 class="front">Friendly and approachable team</h3>
+    </div>
+  </div>
 
-<div class="fslightbox-absoluted fslightbox-full-dimension fslightbox-flex-centered" style="transform: translateX(-893.1px);"><div class=""><img class="fslightbox-source fslightbox-opacity-1" src="https://www.durabilis.co.uk/wp-content/uploads/2023/05/iStock-1194920569-scaled.jpg" style="width: 687px; height: 445.119px;"></div></div> %>
+  <div class="card1">
+    <div class="col-md">
+      <%= image_tag 'image 8.png' %>
+      <h3>Public liability Insurance</h3>
+    </div>
+  </div>
+</div>
+<br> <br> <br> <br> <br> <br>
