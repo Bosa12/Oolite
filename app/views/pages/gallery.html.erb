@@ -3,11 +3,14 @@
 </div>
 <h1> Gallery</h1>
 <div class="card-gallery">
-  <% if @project&.images&.attached? %>
-    <% @project.images.each do |image| %>
+  <% unless @images.empty? %>
+    <% @images.each do |image| %>
       <div class="card-proj">
-        <%= image_tag url_for(image), alt: @project.name, class: "fotos-project" %>
+        <%= image_tag url_for("https://res.cloudinary.com/dc6nbm8zp/image/upload/v1720101942/#{image}"), class: "fotos-project" %>
+        <%# raise %>
       </div>
     <% end %>
   <% end %>
 </div>
+
+<%# @images %>
