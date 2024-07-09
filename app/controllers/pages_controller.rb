@@ -1,14 +1,21 @@
 class PagesController < ApplicationController
   def home
-
   end
 
   def about
+  end
 
+  def gallery
+    @images = []
+    Project.all.each do |project|
+      project.images.each do |image|
+        @images << image.blob.filename
+      end
+    end
+    @images
   end
 
   def contact
-
     # @contact = Contact.new
   end
 
