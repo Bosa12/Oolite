@@ -38,7 +38,7 @@
   transition: transform 0.3s ease;
   display: block;
   &:hover {
-    transform: scale(1.15);
+    transform: scale(1.10);
   }
 }
 .img-out{
@@ -48,7 +48,7 @@
   display: block;
   transition: transform 0.3s ease;
   &:hover {
-    transform: scale(1.15);
+    transform: scale(1.0);
   }
 }
 .inside{
@@ -143,6 +143,6 @@
     transition: transform 0.3s ease;
     display: block;
     &:hover {
-      transform: scale(1.15);
+      transform: scale(1.1);
     }
   }

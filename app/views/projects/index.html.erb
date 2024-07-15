@@ -1,8 +1,8 @@
 <div class="logo">
   <%= image_tag 'logo.jpg', alt: '', style: "width: 20vw; height: auto; border-radius: 10px;" %>
 </div>
-<h1>Projects</h1>
-<div class="container">
+
+<div class="container mt-5">
  <div class="row d-flex justify-content-around">
     <% @projects.each do |project| %>
         <!-- Ajuste as classes de coluna para diferentes breakpoints -->
@@ -21,3 +21,4 @@
     <% end %>
   </div>
 </div>
+<div style="height:300px;"></div>
