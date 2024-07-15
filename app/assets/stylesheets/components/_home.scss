@@ -1,12 +1,14 @@
+.text-logo{
+  font-size: 1.2rem ;
+  font-family: "Oswald", sans-serif;
+}
 .text-home{
   font-size: 1.5rem;
   font-family:  "Oswald", sans-serif;
   font-weight: 400;
   color: #ffffff;
-  font-style: normal;
-  display: flex;
   margin-top: 4.4rem;
-  margin-left: 6.5rem;
+  margin-left: 0.0rem;
   padding: 22px 22px 22px 22px;
   background-color: #FFFFFF0D;
   border-style: solid;
@@ -14,24 +16,13 @@
   border-color: #FFFFFF40;
   border-radius: 12px 5px 12px 5px;
 }
-
-.carousel-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 25.5rem;
-  border-style: solid;
-  padding: 22px 22px 22px 22px;
-  object-fit: cover;
-  background-color: rgb(114, 236, 77);
-  border-style: solid;
-  border-width: 4px 5px 5px 5px;
-  border-color: rgb(114, 236, 77);
-  border-radius: 12px 5px 12px 5px;
-}
-.text-logo{
-  font-size: 1.2rem ;
-  font-family: "Oswald", sans-serif;
+.choose{
+font-family: "Oswald", sans-serif;
+  color: rgb(244, 239, 239);
+  font-size: 50px;
+  display: flow-root;
+  text-align: center;
+  margin-top: 5%;
 }
 
 .btn-primary {
@@ -56,12 +47,11 @@
   font-size: 35px;
 }
 
-h3 {
+h3{
   font-family:"Oswald", sans-serif;
   display: flex;
-  justify-content: center;
-  // align-items: center;
   margin-top: 1em;
+  margin-left: -10.0rem;
   color: rgb(0, 0, 0);
   font-size: 2.0rem;
   text-align: center;
@@ -72,29 +62,25 @@ h3 {
   width: 274px;
   height: 200px;
   border-radius: 30px;
-  margin-left: 5.5em;
+  margin-left: 1.5rem;
   justify-content: center;
   align-items: center;
-  margin-top: 3em;
+  margin-top: 1rem;
   box-shadow: 60px 60px 60px rgba(0, 0, 0, 0.1);
   }
+
+
  .card1 img{
-  margin-bottom: 1.0rem;
-  margin-left: 6.0rem;
+  margin-bottom: 8rem;
+  margin-top: 0px;
+  margin-left: 7.0rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
  }
-.choose{
+ .card-title-free{
   font-family: "Oswald", sans-serif;
-  color: rgb(61, 225, 43);
-  font-size: 2.5rem;
-  display: flex;
-  justify-content: center;
-  margin-top: 3.5rem;
-}
-.front{
-  color: black;
-}
+  margin-left: -7.6rem;
+ }
 .gall{
   font-family: "Oswald", sans-serif;
   display: flex;
@@ -103,18 +89,12 @@ h3 {
 .serv{
   font-family: "Oswald", sans-serif;
   display: flex;
-  margin-left: 1.90rem;
+  margin-left: 7.5rem;
 }
 
-.col-md-5{
-  margin-top: 1.5rem;
-  margin-left: 4.5rem;
-  width: 7,5rem;
-
-}
 .row-service{
   margin-top: 1.5rem;
-  margin-left: 12.5rem;
+  margin-left: 6.9rem;
   display: flex;
 }
 .img-hom{

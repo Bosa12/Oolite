@@ -1,27 +1,58 @@
-.card-servi{
-  background-color: #FFFFFF0D; // Cor de fundo única e semi-transparente
-  box-shadow: 0 4px 8px 0 rgba(255, 254, 249, 0.2);
-  display: flex;
-  transition: transform 0.1s ease; // Transição única e específica
-  border-radius: 12px 5px 12px; // Valor único para bordas arredondadas
-  margin: 10px;
-  margin-left: 0.0rem;
-  width: 450px;
-  height: 500px;
-  padding: 3px 0px 0px 3px;
-  border-style: solid;
-  border-width: 8px 8px 8px 8px;
-  border-color: #FFFFFF40;
+/* Estilo para o título */
+h1 {
+  color: #333; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
 
-  img{
-    display: block;
-    position: absolute;
-    margin-left: 20.0rem;
-    top: 0.4rem;
-    width: 438px;
-    height: 491px;
-    object-fit: fill;
-    border-radius: 5px;
-    margin-top: 0.5rem;
-  }
+/* Estilo para o container */
+// .container {
+//   max-width: 1200px; /* Largura máxima do container */
+//   margin: 0 auto; /* Centraliza o container */
+//   padding: 0 15px;
+//   margin-left: 1.5rem; /* Espaçamento interno */
+// }
+
+/* Estilo para as cards */
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ao redor das cards */
+  margin-bottom: 20px; /* Espaço abaixo de cada card */
+  transition: transform 0.3s ease-in-out;
+   /* Animação ao passar o mouse */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Levanta a card ao passar o mouse */
+}
+
+/* Estilo para o corpo da card */
+.card-body {
+  padding: 1px; /* Espaçamento interno */
+  display: flex; /* Usa flexbox para organizar o conteúdo */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+}
+.card-body img {
+  border-radius: 5px; /* Arredonda as bordas das imagens */
+  margin-bottom: 15px; /* Espaço abaixo das imagens */
+}
+
+.card-body p {
+  font-size: 16px; /* Tamanho da fonte para o parágrafo */
+  color: #666; /* Cor do texto */
+}
+
+.card-body h2 {
+  font-size: 20px; /* Tamanho da fonte para o título h2 */
+  margin-top: 10px; /* Espaço acima do título h2 */
+  text-align: center; /* Centraliza o texto */
+}
+
+.card-body a {
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: #00ff15; /* Cor do link */
+}
+
+.card-body a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }

@@ -1,79 +1,65 @@
 <div class="logo col-2">
   <%= image_tag 'logo.jpg', alt: '', style: "width: 20vw; height: 100%; border-radius: 10px;" %>
 </div>
-
 <div class="container">
-  <div class="row">
-    <div class="col-12 d-flex">
-      <div class="col-6">
-          <div class="card-content">
-
-          </div>
-        <div class="card-service">
-        </div>
-      </div>
-      <div class="col-6">
-        <h2>Inside</h2>
-        <ul class="insid">
-          <li>Painting and decorating</li>
-          <li>Plastering / skimming</li>
-          <li>Kitchen refurbishment</li>
-          <li>Bathroom refurbishment</li>
-          <li>Ceiling / wall repairs</li>
-          <li>Coving install</li>
-          <li>Architrave install</li>
-          <li>Carpet supply and fit</li>
-          <li>Garage conversion</li>
-          <li>Electrical work as part of a project</li>
-          <li>Plumbing work as part of a project</li>
-          <li>Window supply and fit</li>
-          <li>Front door supply and fit</li>
-          <li>Composite</li>
-        </ul>
-      </div>
+  <div class="row mb-4">
+    <div class="serv-fron col-md-6">
+      <ul class="card-service">
+        <h3 class="tit-ser">Inside</h3>
+          <ul class="ins col-md-6">
+            <li>Painting and decorating</li>
+            <li>Plastering / skimming</li>
+            <li>Kitchen refurbishment</li>
+            <li>Bathroom refurbishment</li>
+            <li>Ceiling / wall repairs</li>
+            <li>Coving install</li>
+            <li>Architrave install</li>
+            <li>Carpet supply and fit</li>
+            <li>Garage conversion</li>
+            <li>Electrical work as part of a project</li>
+            <li>Plumbing work as part of a project</li>
+            <li>Window supply and fit</li>
+            <li>Front door supply and fit</li>
+            <li>Composite</li>
+          </ul>
     </div>
+      <div class="img-f col-md-6 col-12 d-block justify-content-end  mb-md-0">
+        <%= image_tag "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571823/20240609_174114_tcbbkz.jpg", style: "width: 100%; max-width: 650px; height: 450px; border-radius: 20px;" %>
+      </div>
   </div>
 </div>
 <div class="container">
-  <div class="row">
-    <div class="col-12 d-flex">
-      <div class="col-6">
-        <h2 class= "out" >Outside</h2>
-        <ul class="inf-ser1">
-          <li>Block Paving</li>
-          <li>Cabin Instal</li>
-          <li>Cladding</li>
-          <li>Decking</li>
-          <li>Driveway Install</li>
-          <li>Exterio Wall Repair</li>
-          <li>Fence Install</li>
-          <li>Gate Instal</li>
-          <li>Path Install/ Patio Install</li>
-          <li>Pergola Install/ Pier Install</li> <!-- Corrigido fechamento da tag -->
-          <li>Render/ Rumble Strip Install</li>
-          <li>Small Extension</li>
-          <li>Wall Build/Well Refurbishment</li>
-        </ul>
+  <div class="row mb-4">
+      <div class="img-insd col-md-6 col-12 d-block justify-content-start ">
+        <%= image_tag "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571823/20240609_174114_tcbbkz.jpg", class: "d-none d-md-block", style: "width: 100%; max-width: 650px; height: 450px; border-radius: 20px;" %>
       </div>
-      <div class="col-6">
-        <div class="card-service1">
-          <div class="card-content">
-          </div>
-        </div>
-      </div>
+    <div class="ins-ser col-md-6 ">
+      <h3 class="tit-out">Outside</h3>
+      <ul class="out col-md-6">
+        <li>Block Paving</li>
+        <li>Cabin Instal</li>
+        <li>Cladding</li>
+        <li>Decking</li>
+        <li>Driveway Install</li>
+        <li>Exterio Wall Repair</li>
+        <li>Fence Install</li>
+        <li>Gate Instal</li>
+        <li>Path Install/ Patio Install</li>
+        <li>Pergola Install/ Pier Install</li> <!-- Corrigido fechamento da tag -->
+        <li>Render/ Rumble Strip Install</li>
+        <li>Small Extension</li>
+        <li>Wall Build/Well Refurbishment</li>
+      </ul>
     </div>
   </div>
 </div>
 <br class="my-4">
-
-
-
 <div class="text-inf col-12">
-  <div class="tex-in col-5">
-    <h3> Service Provided </h3>  <br>
-   <p>The core of the team is Ashley and I, and we have a small trusted select few subcontractors that we work with when necessary (Electrician, plumber, roofer, labourer, waste disposal, landscapers, window/door specialist, carpet fitter) All our projects are initially started with a site visit, where we discuss your vision, and how to make it happen. We specialise in full refurbishments, however, we can do one-off areas of your homes, whether it's a new kitchen, bathroom or anything else you desire. Landscaping is another forte, and we have done numerous garden projects to date.</p>
+  <div class="tex-in col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+    <h3 class="ser-p"> Service Provided </h3>  <br>
+    <p>The core of the team is Ashley and I, and we have a small trusted select few subcontractors that we work with when necessary (Electrician, plumber, roofer, labourer, waste disposal, landscapers, window/door specialist, carpet fitter) All our projects are initially started with a site visit, where we discuss your vision, and how to make it happen. We specialise in full refurbishments, however, we can do one-off areas of your homes, whether it's a new kitchen, bathroom or anything else you desire. Landscaping is another forte, and we have done numerous garden projects to date.</p>
   </div>
-   <%= image_tag 'https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_550,h_500,c_thumb,g_auto/v1719571782/20220519_172244_meerxa.jpg', alt: '', class: 'img-s', style: "width: 550px; height: 500px;" %>
+  <%= image_tag 'https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_550,h_500,c_thumb,g_auto/v1719571782/20220519_172244_meerxa.jpg', alt: '', class: 'img-s', style: "width: 100%; max-width: 550px; height: auto;" %>
 </div>
 
 
