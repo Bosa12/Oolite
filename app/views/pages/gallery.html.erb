@@ -1,16 +1,17 @@
 <div class="logo col-2">
   <%= image_tag 'logo.jpg', alt: '', style: "width: 20vw; height: 100%; border-radius: 10px;" %>
 </div>
-<h1> Gallery</h1>
-<div class="card-gallery">
-  <% unless @images.empty? %>
-    <% @images.each do |image| %>
-      <div class="card-proj">
-        <%= image_tag url_for("https://res.cloudinary.com/dc6nbm8zp/image/upload/v1720101942/#{image}"), class: "fotos-project" %>
-        <%# raise %>
-      </div>
+
+<h1>Gallery</h1>
+<div class="container">
+  <div class="row">
+    <% unless @images.empty? %>
+      <% @images.each do |image| %>
+        <div class="col-md-4 card-proj"> <!-- Adicionado col-md-4 aqui -->
+          <%= image_tag url_for("https://res.cloudinary.com/dc6nbm8zp/image/upload/v1720101942/#{image}"), class: "fotos-project" %>
+        </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
 
-<%# @images %>
