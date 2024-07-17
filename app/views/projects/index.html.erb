@@ -5,15 +5,13 @@
 <div class="container mt-5">
  <div class="row d-flex justify-content-around">
     <% @projects.each do |project| %>
-        <!-- Ajuste as classes de coluna para diferentes breakpoints -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card-proj">
             <div class="card-body">
               <% if project.images.attached? %>
                 <%= image_tag project.images.first, alt: project.name, style: "width: 100%; height: 320px;" %>
               <% end %>
-              <p><%= project.category %></p>
-              <!-- O link agora está dentro da div col-4, mas fora do card-servi -->
+              <p><% project.category %></p>
               <h2><%= link_to project.name, project_path(id: project.id) %></h2>
             </div>
           </div>

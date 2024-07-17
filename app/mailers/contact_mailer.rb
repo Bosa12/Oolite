@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-  default from: "olite@uk.co"
+  default from: "oolite.uk.co"
 
   def contact_email(contact)
     @contact = contact

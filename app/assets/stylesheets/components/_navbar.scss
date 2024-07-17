@@ -4,7 +4,6 @@
   font-size: 1.2rem;
   display: flex;
   direction: rtl;
-
 }
 
 .nav-item, .nav-item1{
@@ -15,7 +14,6 @@
   display: flex;
 
 }
-
 .container-fluid {
   background-color: BFE03E;
   display: flex;
@@ -35,4 +33,9 @@ ul {
 }
 .nav-item1{
   color: white;
+}
+@media (min-width: 992px) {
+  .navbar-responsive {
+    flex-direction: row !important;
+  }
 }

@@ -7,75 +7,84 @@
   <div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
     <div class="carousel-inner ">
       <div class="carousel-item active ">
-         <%= image_tag "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1721063118/Oolite_Developments_3_qbnh5b.jpg", style: "width: 100%; max-width: none; border-radius: 20px; object-fit: cover;" %>ts_1_m5o3mo.jpg", style: "width: 100%; max-width: 1580px; border-radius: 20px; object-fit: cover;" %>
+         <%= image_tag "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1721063118/Oolite_Developments_3_qbnh5b.jpg", style: "width: 100%; max-width: none; border-radius: 20px; object-fit: cover;" %>
       </div>
     </div>
   </div>
 <div class="container">
   <div class="row mb-4">
     <div class="col-md-6">
-      <p class="text-home">Oolite Developments is a small local building company (based around Woodham) that prides itself on a top-quality finish, with a small team that care,
+      <p class="text-home responsive-text">Oolite Developments is a small local building company (based around Woodham) that prides itself on a top-quality finish, with a small team that care,
       with fair pricing, as we would rather get return business, or recommendation's, rather than a one-off inflated payday.
       The company was set up 10 years ago to purchase and develop its own properties, which we did, and now either sold or rented out.
       Things have evolved, and we now provide services to the local community, with many projects under our belts.
       We have a small select team, who are all very approachable friendly and professional.
       </p>
     </div>
-     <div class="phot-hom col-md-6 col-12 d-block justify-content-end  mb-md-0 mt-5">
-        <%= image_tag "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571823/20240609_174114_tcbbkz.jpg", style: "width: 100%; max-width: 650px; height: 450px; border-radius: 20px;" %>
+     <div class="phot-hom col-md-6 col-12 d-block justify-content-center  mb-md-0 mt-2">
+        <%= image_tag "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571823/20240609_174114_tcbbkz.jpg", class: 'img-fro d-none d-md-block', style: "width: 100%; max-width: 650px; height: 450px; border-radius: 20px;" %>
      </div>
   </div>
-
-  <div class="row mb-4">
-    <div class="col-md-6 text-center mb-4">
-      <h1 class="serv">Service Provided</h1>
-      <%= image_tag 'dechn.jpg', alt: '', class: 'img-fluid rounded', style: "width: 100%; max-width: 600px; height: auto;" %>
-      <%= link_to 'See More', projects_path, class: 'btn btn-primary mt-3' %>
+</div>
+<ul class="cards">
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--fence"></div>
+      <div class="card__content">
+        <div class="card__title">Services Provided</div>
+        <p class="card__text">Our refurbishment services encompass a wide range of home and property improvements designed to enhance the functionality, aesthetics, and value of your space.</p>
+        <%= link_to 'See More', projects_path, class: 'btn btn--block card__btn mt-3' %>
+      </div>
     </div>
-    <div class="col-md-6 text-center mb-4">
-      <h1 class="gall">Gallery</h1>
-      <%= image_tag 'https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571885/path12_i13jsg.jpg', alt: '', class: 'img-fluid rounded', style: "width: 100%; max-width: 650px; height: 450px; border-radius: 20px" %>
-      <%= link_to 'Gallery', gallery_path, class: 'btn btn-primary mt-3' %>
+  </li>
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--river"></div>
+      <div class="card__content">
+        <div class="card__title">Gallery</div>
+        <p class="card__text">Explore our gallery to see a showcase of our recent projects. Each image captures the quality and craftsmanship of our refurbishment and construction services.</p>
+        <%= link_to 'Gallery', gallery_path, class: 'btn btn--block card__btn mt-3' %>
+      </div>
+    </div>
+  </li>
+</ul>
+<div class="choose text-center mb-4">
+  <h1>Why Choose Us</h1>
+</div>
+
+<div class="row text-center">
+  <div class="col-md-3 mb-4">
+    <div class="card1 h-100">
+      <%= image_tag 'image 13.jpg', class: 'card-img-top, mg-fluid rounded', style: "max-width: 8vw; height: auto, border-radius: 20px"; %>
+      <div class="card-body">
+        <h3 class="card-title-free">Free Estimates</h3>
+      </div>
     </div>
   </div>
-
-  <div class="choose text-center mb-4">
-    <h1>Why Choose Us</h1>
+  <div class="col-md-3 mb-4">
+    <div class="card1 h-100">
+      <%= image_tag 'image 14.jpg', class: 'card-img-top, mg-fluid rounded', style: "max-width: 8vw; height: auto, border-radius: 20px"; %>
+      <div class="card-body">
+        <h3 class="card-title">High Quality Finishing</h3>
+      </div>
+    </div>
   </div>
-
-  <div class="row text-center">
-    <div class="col-md-3 mb-4">
-      <div class="card1 h-100">
-        <%= image_tag 'image 13.jpg', class: 'card-img-top, mg-fluid rounded', style: "max-width: 8vw; height: auto, border-radius: 20px"; %>
-        <div class="card-body">
-          <h3 class="card-title-free">Free Estimates</h3>
-        </div>
+  <div class="col-md-3 mb-4">
+    <div class="card1 h-100">
+      <%= image_tag 'image 7.jpg', class: 'card-img-top, mg-fluid rounded', style: "max-width: 8vw; height: auto, border-radius: 20px"; %>
+      <div class="card-body">
+        <h3 class="card-title">Friendly and Approachable Team</h3>
       </div>
     </div>
-    <div class="col-md-3 mb-4">
-      <div class="card1 h-100">
-        <%= image_tag 'image 14.jpg', class: 'card-img-top, mg-fluid rounded', style: "max-width: 8vw; height: auto, border-radius: 20px"; %>
-        <div class="card-body">
-          <h3 class="card-title">High Quality Finishing</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 mb-4">
-      <div class="card1 h-100">
-        <%= image_tag 'image 7.jpg', class: 'card-img-top, mg-fluid rounded', style: "max-width: 8vw; height: auto, border-radius: 20px"; %>
-        <div class="card-body">
-          <h3 class="card-title">Friendly and Approachable Team</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 mb-4">
-      <div class="card1 h-100">
-        <%= image_tag 'image 8.png', class:'card-img-top, mg-fluid rounded', style: "max-width: 8vw; height: auto, border-radius: 20px"; %>
-        <div class="card-body">
-          <h3 class="card-title">Public Liability Insurance</h3>
-        </div>
+  </div>
+  <div class="col-md-3 mb-4">
+    <div class="card1 h-100">
+      <%= image_tag 'image 8.png', class:'card-img-top, mg-fluid rounded', style: "max-width: 8vw; height: auto, border-radius: 20px"; %>
+      <div class="card-body">
+        <h3 class="card-title">Public Liability Insurance</h3>
       </div>
     </div>
   </div>
 </div>
+
  <div style="height:100px;"></div>
