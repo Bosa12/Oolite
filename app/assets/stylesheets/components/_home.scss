@@ -7,7 +7,7 @@
   font-family:  "Oswald", sans-serif;
   font-weight: 300;
   color: #ffffff;
-  margin-top: 4.4rem;
+  margin-top: 2.4rem;
   margin-left: 0.0rem;
   padding: 22px 22px 22px 22px;
   background-color: #FFFFFF0D;
@@ -46,7 +46,6 @@ font-family: "Oswald", sans-serif;
   color: rgb(114, 236, 77);
   font-size: 35px;
 }
-
 h3{
   font-family:"Oswald", sans-serif;
   display: flex;
@@ -68,8 +67,6 @@ h3{
   margin-top: 1rem;
   box-shadow: 60px 60px 60px rgba(0, 0, 0, 0.1);
   }
-
-
  .card1 img{
   margin-bottom: 8rem;
   margin-top: 0px;
@@ -89,21 +86,31 @@ h3{
   display: flex;
   margin-left: 8.5rem;
 }
-
-.row-service{
-  margin-top: 1.5rem;
-  margin-left: 11.5rem;
-  display: flex;
+.card-title{
+  font-family: "Oswald", sans-serif;
+  color: rgb(0, 0, 0);
 }
 .phot-hom{
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
+.img-fro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.8rem;
+  border-radius: 40px;
+
+  }
 .img-hom{
   display: flex;
-
 }
 @media (max-width: 768px) {
   .row-service .Service, .row-service .Galery {
     padding-top: 2rem; /* Menos espaço no topo em telas menores */
+  }
+}
+@media (max-width: 768px) {
+  .responsive-text {
+    font-size: 14px; /* Diminui o tamanho da fonte para telas menores */
   }
 }

@@ -122,20 +122,6 @@
   }
 
 }
-.img-s{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 12.8rem;
-  border-radius: 40px;
-  object-fit: cover;
-  padding: 3px 4px 3px 4px;
-  background-color: #0c0c0c0d;
-  border-style: solid;
-  border-width: 5px 6px 5px 6px;
-  border-color: #26262640;
-  border-radius: 12px 5px 12px 5px;
-  }
   .img-insd{
     margin-top: 1.5rem;
     margin-left: -3rem;
@@ -146,3 +132,35 @@
       transform: scale(1.1);
     }
   }
+  .img-s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15.8rem;
+    border-radius: 40px;
+    object-fit: cover;
+    padding: 3px 4px 3px 4px;
+    background-color: #0c0c0c0d;
+    border-style: solid;
+    border-width: 5px 6px 5px 6px;
+    border-color: #26262640;
+    border-radius: 12px 5px 12px 5px;
+    }
+/* Estilo padrão para telas maiores */
+// .card-service li, .out li, .text-inf p, .tit-ser, .tit-out, .ser-p {
+//   font-size: 18px; /* Tamanho padrão da fonte */
+// }
+
+// /* Estilo para telas menores (por exemplo, tablets e smartphones) */
+// @media (max-width: 768px) {
+//   .card-service li, .out li, .text-inf p, .tit-ser, .tit-out, .ser-p {
+//     font-size: 14px; /* Tamanho menor da fonte para telas menores */
+//   }
+// }
+
+// /* Estilo para telas muito pequenas (por exemplo, smartphones em modo retrato) */
+// @media (max-width: 480px) {
+//   .card-service li, .out li, .text-inf p, .tit-ser, .tit-out, .ser-p, .tit-ser h3 {
+//     font-size: 12px; /* Tamanho ainda menor da fonte para telas muito pequenas */
+//   }
+// }
