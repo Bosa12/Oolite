@@ -1,8 +1,24 @@
 <div class="logo">
   <%= image_tag 'logo.jpg', alt: '', style: "width: 20vw; height: 100%; border-radius: 10px;" %>
 </div>
+
+
+<form action="https://send.pageclip.co/api_VeHOuX4b772OO3uLTcTGM8QWD7FkDzTn/contactForm" class="pageclip-form" method="post">
+
+  <!-- This will be used in the email's reply-to field. Must have name="email" -->
+  <input type="email" name="email" value="bob@omg.com"/>
+
+  <!-- This will be used in the email's subject. Must have name="subject" -->
+  <input type="text" name="subject" value="Email subject"/>
+
+  <textarea name="body">Email body</textarea>
+
+  <button class="pageclip-form__submit" type="button">
+    <span>Submit</span>
+  </button>
+</form>
 <!-- Contact 1 - Bootstrap Brain Component -->
-<section class="bg-black py-32 py-md-1">
+<%# <section class="bg-black py-32 py-md-1">
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -59,4 +75,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> %>
