@@ -14,7 +14,6 @@
   border-radius: 12px 5px 12px 5px;
   margin-left: 7.0rem;
 }
-
 .serv-fron{
   color: whitesmoke;
   display: block;
@@ -95,13 +94,14 @@
   border-width: 5px 6px 5px 6px;
   border-color: #FFFFFF40;
   border-radius: 12px 5px 12px
-
 }
 .ser-p{
   font-family: "Oswald", sans-serif;;
   font-size: 2.6rem;
   color: black;
   margin-left: 3rem;
+  margin: auto;
+  padding: 20px;
 }
 .text-inf{
   color: rgb(15, 15, 15);
@@ -146,21 +146,29 @@
     border-color: #26262640;
     border-radius: 12px 5px 12px 5px;
     }
-/* Estilo padrão para telas maiores */
-// .card-service li, .out li, .text-inf p, .tit-ser, .tit-out, .ser-p {
-//   font-size: 18px; /* Tamanho padrão da fonte */
-// }
-
-// /* Estilo para telas menores (por exemplo, tablets e smartphones) */
-// @media (max-width: 768px) {
-//   .card-service li, .out li, .text-inf p, .tit-ser, .tit-out, .ser-p {
-//     font-size: 14px; /* Tamanho menor da fonte para telas menores */
-//   }
-// }
-
-// /* Estilo para telas muito pequenas (por exemplo, smartphones em modo retrato) */
-// @media (max-width: 480px) {
-//   .card-service li, .out li, .text-inf p, .tit-ser, .tit-out, .ser-p, .tit-ser h3 {
-//     font-size: 12px; /* Tamanho ainda menor da fonte para telas muito pequenas */
-//   }
-// }
+ 
+  @media (max-width: 768px) {
+    .responsive-text {
+      font-size: 19px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .responsive-margin {
+      margin-left: 2px;
+    }
+  }
+  @media (min-width: 768px) {
+    .responsive-margin {
+      margin-right: 0;
+    }
+  }
+  @media (min-width: 430px){
+    .serv-fron{
+      margin-top: 8rem;
+    }
+  }
+  @media (min-width: 430px){
+    .img-insd{
+      margin-top: 4rem;
+    }
+  }

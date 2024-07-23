@@ -14,26 +14,15 @@ h1 {
   width: 360px;
 }
 
-/* Estilo para o container */
-// .container {
-//   max-width: 1200px; /* Largura máxima do container */
-//   margin: 0 auto; /* Centraliza o container */
-//   padding: 0 15px;
-//   margin-left: 1.5rem; /* Espaçamento interno */
-// }
-
-/* Estilo para as cards */
 .card {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ao redor das cards */
   margin-bottom: 20px; /* Espaço abaixo de cada card */
   transition: transform 0.3s ease-in-out;
    /* Animação ao passar o mouse */
 }
-
 .card:hover {
   transform: translateY(-5px); /* Levanta a card ao passar o mouse */
 }
-
 /* Estilo para o corpo da card */
 .card-body {
   padding: 1px; /* Espaçamento interno */
