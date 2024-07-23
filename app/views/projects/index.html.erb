@@ -9,12 +9,9 @@
           <div class="card-proj">
             <div class="card-body">
               <% if project.images.attached? %>
-                <% project.images.each do |image| %>
-                  <div class="card">
-                    <%# image_tag url_for(project.images.first), alt: project.name, style: "width: 100%; height: 360px;" %>
-                    <%= image_tag url_for("https://res.cloudinary.com/dc6nbm8zp/image/upload/v1720101942/#{image.blob.filename}"), alt: project.name, style: "width: 100%; height: 360px;" %>
-                  </div>
-                <% end %>
+                <div class="card">
+                  <%= image_tag url_for("https://res.cloudinary.com/dc6nbm8zp/image/upload/v1720101942/#{project.images.first.blob.filename}"), alt: project.name, style: "width: 100%; height: 360px;" %>
+                </div>
               <% end %>
               <p><% project.category %></p>
               <h2><%= link_to project.name, project_path(id: project.id) %></h2>
