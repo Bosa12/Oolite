@@ -114,3 +114,15 @@ h3{
     font-size: 14px; /* Diminui o tamanho da fonte para telas menores */
   }
 }
+
+@media (max-width: 767.98px) { /* Para telas menores que md */
+  .responsive-margin1 {
+    margin-left: 36px; /* Ajuste o valor conforme necessário */
+  }
+}
+
+@media (min-width: 768px) { /* Para telas md e maiores */
+  .responsive-margin {
+    margin-right: 0; /* Remove a margem à direita */
+  }
+}
