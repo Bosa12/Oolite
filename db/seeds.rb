@@ -58,16 +58,12 @@ projects.each do |project_data|
     puts "Images for project #{project_data[:name]} not found!"
     next
   end
-
   images = project_data.delete(:images)
   project = Project.create!(
     name: project_data[:name],
     description: project_data[:description],
     project_type_id: project_data[:project_type_id]
   )
-
-
-
   puts "Creating images for project #{project.name}..."
   images.each do |image_url|
     project.images.attach(
@@ -78,33 +74,19 @@ projects.each do |project_data|
 end
 
  puts "Seeds created successfully!"
-#  require 'open-uri'
 
-#  # Lista de URLs de imagens (removi duplicações e corrigi o erro de digitação no último URL)
-#  image_urls = [
-#    "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571805/20240307_073545_zd3um0.jpg",
-#    "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571793/20221018_105157_wmwtwb.jpg",
-#    "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
-#    "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571782/20220519_172244_meerxa.jpg",
-#    "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg"
-#  ]
+puts "Populando galeria..."
+ Gallery.destroy_all
 
-#  # Itera sobre cada projeto e faz as operações necessárias
-#  Project.transaction do
-#    Project.find_each do |project|
-#      # Apaga todas as imagens associadas ao projeto
-#      project.images.destroy_all
 
-#      puts "Creating images for project #{project.name}..."
-#      image_urls.each do |image_url|
-#        begin
-#          project.images.attach(
-#            io: URI.open(image_url),
-#            filename: File.basename(URI.parse(image_url).path)
-#          )
-#        rescue OpenURI::HTTPError => e
-#          puts "Failed to attach image #{image_url}: #{e.message}"
-#        end
-#      end
-#    end
-#  end
+images = [
+            "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571782/20220519_172244_meerxa.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg",]
+
+images.each do |image_path|
+  Gallery.create(image_path: image_path)
+end
+
+puts "Galeria populada com #{Gallery.count} imagens."
