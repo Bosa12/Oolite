@@ -7,10 +7,14 @@ class PagesController < ApplicationController
 
   def gallery
     @images = []
-    Project.all.each do |project|
-      project.images.each do |image|
-        @images << image.blob.filename
-      end
+    # Project.all.each do |project|
+    #   project.images.each do |image|
+    #     @images << image.blob.filename
+    #   end
+    # end
+
+    Gallery.all.each do |image|
+      @images << image.photo
     end
     @images
   end

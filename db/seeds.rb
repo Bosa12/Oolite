@@ -76,17 +76,19 @@ end
  puts "Seeds created successfully!"
 
 puts "Populando galeria..."
- Gallery.destroy_all
+Gallery.destroy_all
 
 
 images = [
-            "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571792/20230721_161450_yr8tn1.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571782/20220519_172244_meerxa.jpg",
-             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg",]
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg",
+             "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+            ]
 
 images.each do |image_path|
-  Gallery.create(image_path: image_path)
+  Gallery.create(photo: image_path, description: "") # COLUNA DESCRIPTION PARA CASO PRECISE ADICIONAR UM COMENTARIO OU EXPLICACAO SOBRE A IMAGEM
 end
 
 puts "Galeria populada com #{Gallery.count} imagens."
