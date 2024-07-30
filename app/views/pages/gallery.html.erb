@@ -8,7 +8,7 @@
         <% @images.each do |image| %>
           <div class="col-12 col-md-5 col-lg-4">
             <div class="card-proj">
-              <%= image_tag url_for("https://res.cloudinary.com/dc6nbm8zp/image/upload/v1720101942/#{image}"), class: "fotos-project" %>
+              <%= image_tag url_for("#{image}"), class: "fotos-project" %>
             </div> 
           </div>
         <% end %>
