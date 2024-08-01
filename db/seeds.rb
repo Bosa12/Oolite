@@ -98,8 +98,7 @@ images = [
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571610/hl2b0f10bmbw1is3pcb0.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492862/20160523_150055_gj3q3m.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571881/patio_drk0uu.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/fence_atntlx.jpg"
-        ]
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/fence_atntlx.jpg",]
 
 images.each do |image_path|
   Gallery.create(photo: image_path, description: "") # COLUNA DESCRIPTION PARA CASO PRECISE ADICIONAR UM COMENTARIO OU EXPLICACAO SOBRE A IMAGEM
