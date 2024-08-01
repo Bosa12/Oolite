@@ -84,7 +84,8 @@ puts "Populando galeria..."
 Gallery.destroy_all
 
 
-images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/IMG-20220211-WA0000_002_djiedp.jpg",
+images = [
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/IMG-20220211-WA0000_002_djiedp.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571876/DJI_0200-min_2305843009213810322_gc7u7v.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/AirBrush_20221018171557_td1dsn.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571793/20221018_105157_wmwtwb.jpg",
@@ -97,7 +98,8 @@ images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/IMG-202
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571610/hl2b0f10bmbw1is3pcb0.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492862/20160523_150055_gj3q3m.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571881/patio_drk0uu.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/fence_atntlx.jpg",]
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/fence_atntlx.jpg"
+        ]
 
 images.each do |image_path|
   Gallery.create(photo: image_path, description: "") # COLUNA DESCRIPTION PARA CASO PRECISE ADICIONAR UM COMENTARIO OU EXPLICACAO SOBRE A IMAGEM
