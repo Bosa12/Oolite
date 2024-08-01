@@ -1,13 +1,24 @@
 <div class="logo">
-  <%= image_tag 'logo.jpg', alt: '', style: "width: 12vw; height: 100%; border-radius: 10px;" %>
+  <%= image_tag 'logo.jpg', alt: '', style: "width: 20vw; height: auto; border-radius: 10px;" %>
 </div>
-<h1>Projects</h1>
-<% @projects.each do |project| %>
-  <div class= "project-card">
-    <% if project.images.attached? %>
-      <%= image_tag project.images.first, alt: project.name %>
+
+<div class="container mt-5">
+ <div class="row d-flex justify-content-around">
+    <% @projects.each do |project| %>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card-proj">
+            <div class="card-body">
+              <% if project.images.attached? %>
+                <div class="card">
+                  <%= image_tag url_for("https://res.cloudinary.com/dc6nbm8zp/image/upload/v1720101942/#{project.images.first.blob.filename}"), alt: project.name, style: "width: 100%; height: 360px;" %>
+                </div>
+              <% end %>
+              <p><% project.category %></p>
+              <h2><%= link_to project.name, project_path(id: project.id) %></h2>
+            </div>
+          </div>
+        </div>
     <% end %>
-    <h2><%= link_to project.name, project_path(id: project.id) %></h2>
-    <p><% project.category %></p>
   </div>
-<% end %>
+</div>
+<div style="height:300px;"></div>
