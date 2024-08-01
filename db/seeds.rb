@@ -19,7 +19,7 @@ projects = [
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571769/20220216_083019_ipqcs1.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571784/20221108_123712_zdgjqp.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571779/20220217_161209_2_macvzr.jpg",
-             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571777/20220217_160709_iqatbq.jpg",]
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722502417/20240307_073109_uj1ghb.jpg",]
   },
   {
     name: "Bathoroom Refurbishment",
@@ -30,7 +30,6 @@ projects = [
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571830/IMG-20240507-WA0000_uqv4li.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571814/20240609_173822_wzm0no.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571811/20240609_173746_zdnh3n.jpg",
-             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571772/20220216_082410_2_davgz1.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492686/20240329_155824_1_yfqd1x.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/AirBrush_20230505190714_relavo.jpg",]
   },
@@ -51,6 +50,8 @@ projects = [
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571788/20230605_130701_2_tk2f1q.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493126/20210805_133239_py2pem.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493123/20220216_082243_skjbpb.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722502255/20240708_133644_yckkvl.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722502254/20240708_142818_kzcsq2.jpg",
             ]
 
   }
@@ -95,9 +96,10 @@ images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/IMG-202
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492862/20160523_150055_gj3q3m.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492857/20231208_164843_2_scxpok.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571610/hl2b0f10bmbw1is3pcb0.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492862/20160523_150055_gj3q3m.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571881/patio_drk0uu.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/fence_atntlx.jpg",]
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/fence_atntlx.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722502254/20240718_154942_b5xcwk.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722502256/20240717_144856_zqzg4x.jpg",]
 
 images.each do |image_path|
   Gallery.create(photo: image_path, description: "") # COLUNA DESCRIPTION PARA CASO PRECISE ADICIONAR UM COMENTARIO OU EXPLICACAO SOBRE A IMAGEM
