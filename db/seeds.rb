@@ -15,11 +15,11 @@ projects = [
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571847/20160209_085645_yjnvrx.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571797/20231208_164048_k2l2as.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571784/20221108_123712_zdgjqp.jpg",
-             "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571777/20220217_160709_iqatbq.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1719571769/20220216_083019_ipqcs1.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571784/20221108_123712_zdgjqp.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571779/20220217_161209_2_macvzr.jpg",
-             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571777/20220217_160709_iqatbq.jpg",]
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571777/20220217_160709_iqatbq.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767143/20150122_122641_hakd1v.jpg",]
   },
   {
     name: "Bathoroom Refurbishment",
@@ -50,7 +50,7 @@ projects = [
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571788/20230605_130701_2_tk2f1q.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493126/20210805_133239_py2pem.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493123/20220216_082243_skjbpb.jpg",
-            ]
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767137/pier_xv6zzd.jpg",]
 
   }
 
@@ -98,8 +98,8 @@ images = [
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/fence_atntlx.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767152/20160525_110800_ezeji0.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767149/20160525_110836_vvdktx.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767137/DJI_0207rs-min_zwqfef.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767143/20191125_120607_vqyge3.jpg",]
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767143/20191125_120607_vqyge3.jpg",
+        "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767154/20170519_135154_ltnlmg.jpg",]
 
 
 images.each do |image_path|
