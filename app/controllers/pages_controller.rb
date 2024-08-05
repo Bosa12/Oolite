@@ -16,10 +16,9 @@ class PagesController < ApplicationController
     # #   end
     # # end
 
-    Gallery.all.each do |image|
+    # Gallery.all.each do |image|
       @images = Gallery.all.map { |image| url_for(image.photo) }
-    end
-    @images
+    # end
   end
 
   def contact
