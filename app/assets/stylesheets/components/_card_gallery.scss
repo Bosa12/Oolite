@@ -99,15 +99,26 @@ img {
 .card__image--fence {
   background-image: url(https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722596798/WhatsApp_Image_2024-08-02_at_12.05.54_im6bkl.jpg);
 }
-.card__title {
+.card__title1 {
   color: #000000;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 2px;
+  margin-left: 4.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: underline;
   text-transform: uppercase;
+
+}
+.card__title2 {
+  color: #000000;
+  margin-left: 7.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+
 }
 .card__text {
-  font-family: 'Oswald',sans-serif;
+  font-family: auto;
   flex: 1 1 auto;
   font-size: 1rem;
   line-height: 1.5;

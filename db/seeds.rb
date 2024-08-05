@@ -31,7 +31,10 @@ projects = [
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571814/20240609_173822_wzm0no.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571811/20240609_173746_zdnh3n.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492686/20240329_155824_1_yfqd1x.jpg",
-             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/AirBrush_20230505190714_relavo.jpg",]
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/AirBrush_20230505190714_relavo.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722873286/WhatsApp_Image_2024-08-05_at_16.50.04_czfncu.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722873286/WhatsApp_Image_2024-08-05_at_16.49.21_uhg2mj.jpg",
+            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722873263/WhatsApp_Image_2024-08-05_at_16.51.11_nm42mk.jpg",]
   },
   {
     name: "Full  Refurbishment",
@@ -50,7 +53,12 @@ projects = [
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571788/20230605_130701_2_tk2f1q.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493126/20210805_133239_py2pem.jpg",
              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493123/20220216_082243_skjbpb.jpg",
-             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767137/pier_xv6zzd.jpg",]
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767137/pier_xv6zzd.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872965/WhatsApp_Image_2024-08-05_at_16.35.05_askdrr.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872954/WhatsApp_Image_2024-08-05_at_16.32.22_gwul4s.jpg",
+             "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872954/WhatsApp_Image_2024-08-05_at_16.32.06_frlo19.jpg",
+            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872966/WhatsApp_Image_2024-08-05_at_16.40.16_wjzqzy.jpg",
+            "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722875487/2024-08-05_at_17.27.04_monaat.jpg",]
 
   }
 
@@ -86,7 +94,9 @@ Gallery.destroy_all
 images = [
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/IMG-20220211-WA0000_002_djiedp.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767137/20210212_155431_002_ruozka.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767158/20170620_151840_qtlb0r.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571876/DJI_0200-min_2305843009213810322_gc7u7v.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767155/20171204_163239_ltlkzm.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/AirBrush_20221018171557_td1dsn.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571832/20240609_174300_1_pv9fjk.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571760/20191130_112409_q87ujg.jpg",
@@ -95,11 +105,13 @@ images = [
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492857/20231208_164843_2_scxpok.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492862/20160523_150055_gj3q3m.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571881/patio_drk0uu.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/fence_atntlx.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767152/20160525_110800_ezeji0.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767149/20160525_110836_vvdktx.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767143/20191125_120607_vqyge3.jpg",
-        "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767154/20170519_135154_ltnlmg.jpg",]
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767161/fencing_ksp5i4.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872966/WhatsApp_Image_2024-08-05_at_16.45.50_cuciga.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872954/WhatsApp_Image_2024-08-05_at_16.32.06_frlo19.jpg",
+          ]
 
 
 images.each do |image_path|

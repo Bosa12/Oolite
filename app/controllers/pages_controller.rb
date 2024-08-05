@@ -12,7 +12,7 @@ class PagesController < ApplicationController
     # @images = []
     # # Project.all.each do |project|
     # #   project.images.each do |image|
-    # #     @images << image.blob.filename
+    #     @images << image.blob.filename
     # #   end
     # # end
 
