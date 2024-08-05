@@ -4,18 +4,16 @@
   font-size: 1.2rem;
   display: flex;
   direction: rtl;
-
 }
 
 .nav-item, .nav-item1{
   font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: flex;
   margin-right: 10px;
   display: flex;
 
 }
-
 .container-fluid {
   background-color: BFE03E;
   display: flex;
@@ -23,8 +21,7 @@
 }
 
 ul {
-  margin-top: 9.5rem ;
-  overflow: hidden;
+  margin-top: 2.5rem ;
   justify-content: space-around;
 }
 .nav-item{
@@ -36,4 +33,9 @@ ul {
 }
 .nav-item1{
   color: white;
+}
+@media (min-width: 992px) {
+  .navbar-responsive {
+    flex-direction: row !important;
+  }
 }

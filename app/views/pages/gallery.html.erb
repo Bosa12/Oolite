@@ -1,0 +1,18 @@
+<div class="logo col-2">
+  <%= image_tag 'logo.jpg', alt: '', style: "max-width: 20vw; height: auto;" %>
+</div>
+
+<div class="container">
+  <div class="row gx-5">
+      <% unless @images.empty? %>
+        <% @images.each do |image| %>
+          <div class="col-12 col-md-5 col-lg-4">
+            <div class="card-proj">
+              <%= image_tag url_for("#{image}"), class: "fotos-project" %>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+<div style="height:300px;"></div>
