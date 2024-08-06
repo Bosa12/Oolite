@@ -7,18 +7,18 @@ class PagesController < ApplicationController
   end
 
   def gallery
-    # @images = Gallery.all.map { |image| url_for(image.photo) }
 
-    # @images = []
+    @images = []
     # # Project.all.each do |project|
     # #   project.images.each do |image|
     #     @images << image.blob.filename
     # #   end
     # # end
 
-    # Gallery.all.each do |image|
-      @images = Gallery.all.map { |image| url_for(image.photo) }
-    # end
+     Gallery.all.each do |image|
+       @images << image.photo
+     end
+    @images
   end
 
   def contact
