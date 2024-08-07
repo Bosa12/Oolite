@@ -157,9 +157,10 @@
   }
 
 
-  @media (max-width: 768px) {
+  @media (min-width: 600px) and (max-width: 1024px) {
+    /* Estilos específicos para tablets */
     .responsive-text {
-      font-size: 12px;
+      font-size: 18px;
     }
   }
   @media (max-width: 767.98px) {
