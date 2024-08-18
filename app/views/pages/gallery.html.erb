@@ -1,13 +1,13 @@
 <div class="logo col-2">
-  <%= image_tag 'logo.jpg', alt: '', style: "max-width: 20vw; height: auto;" %>
+ <%= image_tag 'logo.jpg', alt: '', class: 'img-fluid rounded ml-3', style: "height: auto;" %>
 </div>
 
-<div class="container">
-  <div class="row gx-5">
+<div class="container" style="margin-left: 0rem" >
+  <div class=" cards-p row gx-5">
       <% unless @images.empty? %>
         <% @images.each do |image| %>
           <div class="col-12 col-md-5 col-lg-4">
-            <div class="card-proj">
+            <div class="card-gallery">
               <%= image_tag url_for("#{image}"), class: "fotos-project" %>
             </div>
           </div>

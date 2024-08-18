@@ -49,27 +49,27 @@ font-family: "Oswald", sans-serif;
 h3{
   font-family:"Oswald", sans-serif;
   display: flex;
-  margin-top: 1em;
+  margin-top: 3rem;
   margin-left: -10.0rem;
   color: rgb(0, 0, 0);
-  font-size: 2.0rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 .card1 {
   background-color: #ffffff;
   display: flex;
   width: 274px;
-  height: 200px;
+  height: 121px;
   border-radius: 30px;
   margin-left: 1.5rem;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 4rem;
   box-shadow: 60px 60px 60px rgba(0, 0, 0, 0.1);
   }
  .card1 img{
   margin-bottom: 8rem;
-  margin-top: 0px;
+  margin-top: 4rem;
   margin-left: 7.0rem;
   display: flex;
   align-items: flex-end;
@@ -110,11 +110,11 @@ h3{
     padding-top: 2rem; /* Menos espaço no topo em telas menores */
   }
 }
-@media (max-width: 768px) {
-  .responsive-text {
-    font-size: 14px; /* Diminui o tamanho da fonte para telas menores */
-  }
-}
+// @media (max-width: 768px) {
+//   .responsive-text {
+//     font-size: 14px; /* Diminui o tamanho da fonte para telas menores */
+//   }
+// }
 
 @media (max-width: 767.98px) { /* Para telas menores que md */
   .responsive-margin1 {
