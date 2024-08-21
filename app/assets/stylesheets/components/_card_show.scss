@@ -7,8 +7,21 @@
   padding: 7px;
   width: 360px;
 }
+@media screen and (max-width: 820px){
+ 
+}
+
 @media screen and (max-width: 420px){
   .card-show{
     width: 100%;
+    margin-left: -0rem;
   }
+}
+.card-show {
+  margin-bottom: 1rem; /* Espaçamento inferior entre os cards */
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
 }

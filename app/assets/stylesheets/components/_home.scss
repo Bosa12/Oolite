@@ -104,26 +104,39 @@ h3{
 .img-hom{
   display: flex;
 }
+.chos{
+  margin-top: -2rem;
+}
 
-@media (max-width: 768px) {
+@media screen and (max-width: 820px) {
+  .card1{
+    margin-left: 6rem;
+  }
   .row-service .Service, .row-service .Galery {
-    padding-top: 2rem; /* Menos espaço no topo em telas menores */
+    padding-top: 2rem;
+    margin-left: 4px;
+    margin-right: 0;
+    width: 39%;
+  }
+  .img-fro{
+    margin-top: 6rem;
+  }
+  .text-center{
+    margin-left: -1rem;
+  }
+
+}
+
+@media screen and (max-width: 1280px){
+  .chos{
+    margin-left: -2rem;
   }
 }
-// @media (max-width: 768px) {
-//   .responsive-text {
-//     font-size: 14px; /* Diminui o tamanho da fonte para telas menores */
-//   }
-// }
-
-@media (max-width: 767.98px) { /* Para telas menores que md */
-  .responsive-margin1 {
-    margin-left: 36px; /* Ajuste o valor conforme necessário */
+@media screen and (max-width: 420px){
+  .chos{
+    margin-left: -4rem;
   }
-}
-
-@media (min-width: 768px) { /* Para telas md e maiores */
-  .responsive-margin {
-    margin-right: 0; /* Remove a margem à direita */
+  .logo-home{
+    margin-left: 1rem;
   }
 }
