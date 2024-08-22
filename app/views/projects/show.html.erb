@@ -1,8 +1,8 @@
 <div class="logo">
   <%= image_tag 'logo.jpg', alt: '', class: 'logo rounded', style: "width: 24vh; height: 100%; border-radius: 13%;" %>
 </div>
-<div class="container" style="margin-left: 0rem ">
-  <div class="row mt-3 g-4">
+<div class="pro container">
+  <div class="row mt-3 g-5">
     <% if @project.images.attached? %>
       <% @project.images.each do |image| %>
         <!-- Para telas pequenas (sm) usa toda a largura (col-12), para médias (md) e grandes (lg) divide em 3 -->
