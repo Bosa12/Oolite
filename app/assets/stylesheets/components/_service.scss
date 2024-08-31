@@ -2,6 +2,10 @@
   max-width: 100%;
   overflow-x: hidden;
  }
+ ul {
+  padding-left: 0;
+  list-style: none;
+}
 .ins-ser{
   color: whitesmoke;
   font-family: "Oswald", sans-serif;
@@ -60,7 +64,7 @@
   font-family: "Oswald", sans-serif;
 }
 .ins{
-  margin-left: -3rem;
+  margin-left: 2rem;
   margin-top: 5rem;
   display: block;
   font-size: 1.1rem;
@@ -150,7 +154,7 @@
     border-radius: 12px 5px 12px 5px;
     }
   .colun1{
-    margin-left: 16rem;
+    margin-left: 14rem;
     margin-top: -20rem;
   }
   .colun2{
@@ -162,7 +166,7 @@
   @media screen and (max-width: 820px){
     .ins{
     margin-top: 2rem;
-    margin-left: -2rem;
+    margin-left: -1rem;
     font-size: 22px;
     }
     .img-s{
@@ -192,7 +196,7 @@
      width: 558px;
     }
     .tit-ser{
-      margin-left: 7.4rem;
+      margin-left: 10rem;
     }
     .ins-ser{
       width: 558;
@@ -203,7 +207,7 @@
     }
     .colun1{
       margin-left: 15rem;
-      margin-top: -21rem;
+      margin-top: -23.9rem;
       font-size: 23px;
     }
     .text-inf{
@@ -211,6 +215,7 @@
     }
     .ser-p{
       margin-left: 15rem;
+      font-size: 3rem;
     }
     .text-inf p{
       margin-left: 2rem;
@@ -221,11 +226,14 @@
 
   }
   @media screen and (max-width: 430px) {
+    .ser-p{
+      margin-left: 0.1rem;
+    }
     .img-fluid{
       margin-left: -3rem;
     }
     .tit-ser{
-      margin-left: 2rem;
+      margin-left: 3rem;
     }
     .text-inf{
       margin-left: 0rem;
@@ -234,12 +242,12 @@
       height: 359px;
     }
     .colun2{
-      margin-left: 8rem;
+      margin-left: 9.2rem;
       margin-top: -18rem;
     }
     .colun1{
-      margin-top: -17.6rem;
-      margin-left: 10rem;
+      margin-top: -16.3rem;
+      margin-left: 9rem;
     }
     .serv-p{
       margin-left: 1rem;
@@ -254,11 +262,11 @@
     .serv-fron  {
       margin-top: 8rem;
       margin-left: 0rem;
-      height: 414px;
+      height: 360px;
     }
     .ins  {
       margin-top: 2rem;
-      margin-left: -4rem;
+      margin-left: -1rem;
     }
     .tit-out{
       margin-left: 3rem;
@@ -273,11 +281,11 @@
     font-size: 0.99rem;
   }
 }
-  @media screen and (max-width: 420px) {
-    .ser-p {
-    margin-left: 4rem;
-    }
-  }
+  // @media screen and (max-width: 420px) {
+  //   .ser-p {
+  //   margin-left: 4rem;
+  //   }
+  // }
   @media screen and (max-width: 767.98px) {
     .responsive-margin {
       margin-left: 2px;

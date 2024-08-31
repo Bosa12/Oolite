@@ -1,6 +1,6 @@
-/* Estilo para o título */
+
 h1 {
-  color: #333; /* Cor do texto */
+  color: #333;
   text-align: center; /* Centraliza o texto */
   margin-bottom: 20px; /* Espaço abaixo do título */
 }
@@ -31,19 +31,19 @@ h1 {
   justify-content: space-between; /* Distribui o espaço entre os itens */
 }
 .card-body img {
-  border-radius: 5px; /* Arredonda as bordas das imagens */
-  margin-bottom: 15px; /* Espaço abaixo das imagens */
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .card-body p {
-  font-size: 16px; /* Tamanho da fonte para o parágrafo */
-  color: #666; /* Cor do texto */
+  font-size: 16px;
+  color: #666;
 }
 
 .card-body h2 {
-  font-size: 20px; /* Tamanho da fonte para o título h2 */
-  margin-top: 10px; /* Espaço acima do título h2 */
-  text-align: center; /* Centraliza o texto */
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .card-body a {
@@ -54,4 +54,3 @@ h1 {
 .card-body a:hover {
   text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
-

@@ -16,12 +16,6 @@
    .sho{
     margin-left: 1rem ;
    }
-    @media screen and (max-width: 420px) {
-      .card-proj {
-        margin-left: 3.4rem;
-      }
-
-    }
 
   .project-detail:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -36,3 +30,22 @@
   .project-detail p {
     margin: 10px 0;
   }
+  @media screen and (max-width: 420px) {
+    .card-proj{
+      margin-left: 3.5rem;
+    }
+
+  }
+  @media screen and (max-width: 360px) {
+    .card-proj{
+      margin-left: 2.4rem;
+    }
+
+  }
+
+@media screen and (max-width: 820px) {
+  .pro {
+    margin-left: -0.0rem;
+  }
+
+}
