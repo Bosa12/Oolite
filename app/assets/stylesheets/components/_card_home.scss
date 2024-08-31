@@ -110,7 +110,7 @@ img {
 }
 .card__title1 {
   color: #000000;
-  margin-left: 4.5rem;
+  margin-left: 5.5rem;
   font-size: 1.1rem;
   font-weight: bold;
   text-decoration: underline;
@@ -135,6 +135,11 @@ img {
 }
 @media screen and (max-width: 420px) {
   .card__title1 {
-    margin-left: 2.4rem;
+    margin-left: 3.5rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .card__title1 {
+    margin-left: 2.5rem;
   }
 }
