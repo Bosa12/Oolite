@@ -138,6 +138,12 @@ img {
     margin-left: 3.5rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .card__title1 {
+    margin-left: 2.5rem;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .card__title1 {
     margin-left: 2.5rem;

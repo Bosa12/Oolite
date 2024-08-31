@@ -220,7 +220,7 @@
       margin-left: 15rem;
       font-size: 3rem;
     }
-    
+
     .text-inf p{
       margin-left: 2rem;
     }
@@ -281,6 +281,13 @@
     }
 
   }
+  @media screen and (max-width: 375px){
+    .colun2{
+      margin-left: 10rem;
+      margin-top: -16.4rem;
+    }
+  }
+
   @media screen and (max-width: 360px){
     .colun2{
       margin-left: 9rem;
