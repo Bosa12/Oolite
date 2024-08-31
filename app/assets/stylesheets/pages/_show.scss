@@ -30,6 +30,12 @@
   .project-detail p {
     margin: 10px 0;
   }
+  @media screen and (max-width: 428px) {
+    .card-proj{
+      margin-left: 4.5rem;
+    }
+  }
+
   @media screen and (max-width: 420px) {
     .card-proj{
       margin-left: 3.5rem;
@@ -38,7 +44,7 @@
 
  @media screen and (max-width: 375px) {
     .card-proj{
-      margin-left: 3.0rem;
+      margin-left: 3.5rem;
     }
  }
 

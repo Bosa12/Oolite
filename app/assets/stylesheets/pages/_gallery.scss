@@ -18,8 +18,15 @@
 }
 .car-d {
   margin-left: 4rem;
+
 }
-@media (max-width: 430px) {
+@media (max-width: 428px) {
+  .card-gallery {
+    margin-left: -3.8rem;
+  }
+
+}
+@media (max-width: 420px) {
   .card-gallery {
     margin-left: -4.8rem;
   }
@@ -27,7 +34,7 @@
 }
 @media screen and (max-width: 375px) {
   .card-gallery{
-    margin-left: -5.2rem;
+    margin-left: -4.9rem;
   }
 }
 @media (max-width: 360px) {
