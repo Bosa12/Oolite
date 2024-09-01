@@ -15,7 +15,7 @@
   font-size: 1.1rem;
   margin-top: -28rem;
   width: 490px;
-  height: 499px;
+  height: 449px;
   padding: 22px 22px 22px 22px;
   background-color: #FFFFFF0D;
   border-style: solid;
@@ -31,7 +31,7 @@
   font-size: 1.1rem;
   margin-top: 3rem;
   width: 490px;
-  height: 499px;
+  height: 393px;
   padding: 22px 22px 22px 22px;
   background-color: #FFFFFF0D;
   border-style: solid;
@@ -41,7 +41,7 @@
   margin-left: -0.6rem;
 }
 .img-f{
-  margin-top: -33rem;
+  margin-top: -26rem;
   margin-left: 35rem;
   background-size: cover;
   transition: transform 0.3s ease;
@@ -68,9 +68,9 @@
 }
 .ins{
   margin-left: 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: "Oswald", sans-serif;
 }
 .out{
@@ -78,19 +78,19 @@
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   margin-right: 3.5rem;
-  margin-top: 4.7rem;
+  margin-top: 2.7rem;
 }
 .tit-out{
   margin-top: -7.6rem;
   color: #a5d138;
-  margin-left: 3.4rem;
+  margin-left: 6.4rem;
   font-size: 4.4rem;
 }
 .tit-ser{
   color: #a5d138;
   font-size: 5.4rem;
   margin-top: -11.5rem;
-  margin-left: 3.4rem;
+  margin-left: 6.4rem;
  }
 .inf-ser1{
   color: whitesmoke;
@@ -133,7 +133,7 @@
     }
   }
   .img-insd{
-    margin-top: 1.5rem;
+    margin-top: 7.5rem;
     margin-left: -2rem;
     background-size: cover;
     transition: transform 0.3s ease;
@@ -158,11 +158,14 @@
     }
   .colun1{
     margin-left: 14rem;
-    margin-top: -19.5rem;
+    margin-top: -22.7rem;
+    font-size: 1.2rem;
+
   }
   .colun2{
     margin-left: 12rem;
-    margin-top: -18.5rem;
+    margin-top: -14.4rem;
+    font-size: 1.2rem;
   }
 
 
@@ -170,20 +173,26 @@
     .ins{
     margin-top: 2rem;
     margin-left: -1rem;
-    font-size: 22px;
+    font-size: 23px;
     }
     .img-s{
       display: none;
     }
     .ins-ser{
       margin-top: 6rem;
-      margin-left: 7rem;
+      margin-left: 4rem;
       font-size: 21px;
+      width: 558px;
+    }
+    .colun1{
+      margin-left: 15rem;
+      margin-top: -28rem;
+      font-size: 23px;
     }
     .colun2{
-      margin-left: 15rem;
+      margin-left: 16rem;
       font-size: 23px;
-      margin-top: -25rem;
+      margin-top: -17.5rem;
     }
     .img-f{
       margin-left: 1rem;
@@ -208,11 +217,7 @@
       font-size: 24px;
       margin-top: 2rem;
     }
-    .colun1{
-      margin-left: 15rem;
-      margin-top: -23.9rem;
-      font-size: 23px;
-    }
+
     .text-inf{
       margin-left: 0rem;
     }
@@ -225,7 +230,10 @@
       margin-left: 2rem;
     }
     .tit-out{
-      margin-left: 7rem;;
+      margin-left: 9rem;;
+    }
+    .back{
+      margin-left: 1rem;
     }
 
   }
@@ -247,11 +255,11 @@
       height: 359px;
     }
     .colun2{
-      margin-left: 11rem;
-      margin-top: -16.5rem;
+      margin-left: 10rem;
+      margin-top: -11.8rem;
     }
     .colun1{
-      margin-top: -16.3rem;
+      margin-top: -19rem;
       margin-left: 9rem;
     }
     .serv-p{
@@ -279,22 +287,50 @@
     .outis{
       margin-top: -6rem;
     }
-
+    .text-inf p {
+      margin-left: 0rem;
+    }
   }
   @media screen and (max-width: 375px){
+    .serv-fron{
+      height: 272px;
+    }
+    .ins{
+      margin-left: 0rem;
+      margin-top: 3rem;
+    }
     .colun2{
-      margin-left: 10rem;
-      margin-top: -16.4rem;
+      margin-top: -11.9rem;
+      margin-left: 9rem;
+    }
+    .colun1{
+      margin-top: -18.9rem;
+      margin-left: 8rem;
+    }
+    .text-inf p {
+      margin-left: 0rem;
     }
   }
 
   @media screen and (max-width: 360px){
+    .text-inf p {
+      margin-left: 0rem;
+    }
+    .ins{
+      margin-left: -1rem;
+    }
+    .choose{
+      margin-left: 0rem;
+    }
     .colun2{
       margin-left: 9rem;
-      margin-top: -16.5rem;
+      margin-top: -11.9rem;
     }
     .ser-p{
       margin-left: 0.7rem;
+    }
+    .colun1{
+      margin-top: -18.9rem;
     }
   }
   @media screen and (max-width: 430px) {
@@ -302,11 +338,6 @@
     font-size: 0.99rem;
   }
 }
-  // @media screen and (max-width: 420px) {
-  //   .ser-p {
-  //   margin-left: 4rem;
-  //   }
-  // }
   @media screen and (max-width: 767.98px) {
     .responsive-margin {
       margin-left: 2px;
