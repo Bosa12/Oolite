@@ -133,9 +133,19 @@ img {
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
+@media screen and (max-width: 430px){
+  .cards__item{
+    margin-top: -5rem;
+  }
+  
+}
+
 @media screen and (max-width: 420px) {
   .card__title1 {
     margin-left: 3.5rem;
+  }
+  .cards__item{
+    margin-top: -5rem;
   }
 }
 @media screen and (max-width: 375px) {

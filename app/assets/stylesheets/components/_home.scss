@@ -108,6 +108,14 @@ h3{
   margin-top: -2rem;
 }
 
+
+@media screen and (max-width: 1280px){
+  .chos{
+    margin-left: -2rem;
+  }
+}
+
+
 @media screen and (max-width: 820px) {
   .card1{
     margin-left: 6rem;
@@ -124,17 +132,16 @@ h3{
   .text-center{
     margin-left: -1rem;
   }
-
 }
-
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 428px){
   .chos{
-    margin-left: -2rem;
+    margin-left: -3rem;
   }
 }
+
 @media screen and (max-width: 420px){
   .chos{
-    margin-left: -5rem;
+    margin-left: -4rem;
   }
   .logo-home{
     margin-left: 1rem;
@@ -142,5 +149,18 @@ h3{
   .card1{
     margin-top: 2rem;
   }
- 
+
+}
+
+@media screen and (max-width: 375px){
+  .chos{
+    margin-left: -4.7rem;
+  }
+
+}
+@media screen and (max-width: 360px){
+  .chos{
+    margin-left: -5rem;
+  }
+
 }
