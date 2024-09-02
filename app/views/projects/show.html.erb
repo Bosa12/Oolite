@@ -1,23 +1,23 @@
 <div class="logo">
   <%= image_tag 'logo.jpg', alt: '', class: 'logo rounded', style: "width: 24vh; height: 100%; border-radius: 13%;" %>
 </div>
-<div class="pro container">
-  <div class="row mt-3 g-5">
-    <% if @project.images.attached? %>
-      <% @project.images.each do |image| %>
-        <!-- Para telas pequenas (sm) usa toda a largura (col-12), para médias (md) e grandes (lg) divide em 3 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
+<%# <div class="pro container">
+  <div class="row mt-3 g-5"> %>
+    <%# <% if @project.images.attached? %>
+      <%# <% @project.images.each do |image| %>
+        <!-- Para telas pequenas (sm) usa toda a largura (col-12), para médias (md) e grandes (lg) divide em 3 --> %>
+        <%# <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card-show">
             <%= image_tag url_for("https://res.cloudinary.com/dc6nbm8zp/image/upload/v1720101942/#{image.blob.filename}"), alt: @project.name, style: "width: 100%; height: 360px;" %>
-            <div class="card-body">
+            <%# <div class="card-body">
             </div>
           </div>
         </div>
       <% end %>
-    <% end %>
-  </div>
-</div>
+    <%# <% end %>
+  <%# </div>
+</div> %>
 
- <%= link_to 'back', projects_path, class: 'back btn btn-custom' %>
+ <%# <%= link_to 'back', projects_path, class: 'back btn btn-custom' %> 
 
 <div style="height:200px;"></div>

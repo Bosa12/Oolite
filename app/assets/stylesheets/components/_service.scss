@@ -108,7 +108,7 @@
 .ser-p{
   font-family: "Oswald", sans-serif;;
   font-size: 2.0rem;
-  color: black;
+  color: #769a1c;
   margin-left: 5rem;
   margin-top: -5rem;
   padding: 1px;
@@ -164,7 +164,7 @@
   }
   .colun2{
     margin-left: 12rem;
-    margin-top: -14.4rem;
+    margin-top: -16.2rem;
     font-size: 1.2rem;
   }
 
@@ -235,19 +235,26 @@
     .back{
       margin-left: 1rem;
     }
-
   }
 
   @media screen and (max-width: 430px) {
+    .tit-ser{
+      font-size: 3.4rem;
+      margin-top: -8.9rem;
+      margin-left: 4rem;
+    }
+    .tit-out{
+      font-size: 3.4rem;
+      margin-top: -6.2rem;
+      margin-left: 4rem;
+    }
     .ser-p{
-      margin-left: 1.1rem;
+      margin-left: 3.1rem;
     }
     .img-fluid{
       margin-left: -3rem;
     }
-    .tit-ser{
-      margin-left: 3rem;
-    }
+
     .text-inf{
       margin-left: 0rem;
     }
@@ -256,7 +263,7 @@
     }
     .colun2{
       margin-left: 10rem;
-      margin-top: -11.8rem;
+      margin-top: -13.4rem;
     }
     .colun1{
       margin-top: -19rem;
@@ -275,15 +282,13 @@
     .serv-fron  {
       margin-top: 8rem;
       margin-left: 0rem;
-      height: 360px;
+      height: 323px;
     }
     .ins  {
       margin-top: 2rem;
       margin-left: -1rem;
     }
-    .tit-out{
-      margin-left: 3rem;
-    }
+
     .outis{
       margin-top: -6rem;
     }
@@ -292,16 +297,25 @@
     }
   }
   @media screen and (max-width: 375px){
+    .tit-ser{
+      font-size: 3.4rem;
+      margin-top: -9rem;
+    }
+    .tit-out{
+      font-size: 3.4rem;
+      margin-top: -6.3rem;
+    }
     .serv-fron{
-      height: 272px;
+      height: 254px;
     }
     .ins{
       margin-left: 0rem;
-      margin-top: 3rem;
+      margin-top: 2em;
     }
+
     .colun2{
-      margin-top: -11.9rem;
-      margin-left: 9rem;
+      margin-top: -13.4rem;
+      margin-left: 8rem;
     }
     .colun1{
       margin-top: -18.9rem;
@@ -313,21 +327,35 @@
   }
 
   @media screen and (max-width: 360px){
+    .tit-ser{
+      font-size: 3.4rem;
+      margin-top: -9rem;
+    }
+    .out{
+      margin-top: 2.7rem;
+
+    }
+    .tit-out{
+      font-size: 3.4rem;
+      margin-top: -7rem;
+    }
     .text-inf p {
       margin-left: 0rem;
     }
     .ins{
       margin-left: -1rem;
+      margin-top: 2rem;
     }
     .choose{
       margin-left: 0rem;
+
     }
     .colun2{
-      margin-left: 9rem;
-      margin-top: -11.9rem;
+      margin-left: 8rem;
+      margin-top: -13.2rem;
     }
     .ser-p{
-      margin-left: 0.7rem;
+      margin-left: 2.7rem;
     }
     .colun1{
       margin-top: -18.9rem;
