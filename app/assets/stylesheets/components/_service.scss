@@ -241,7 +241,7 @@
     .tit-ser{
       font-size: 3.4rem;
       margin-top: -8.9rem;
-      margin-left: 4rem;
+      margin-left: 5rem;
     }
     .tit-out{
       font-size: 3.4rem;
@@ -259,14 +259,14 @@
       margin-left: 0rem;
     }
     .ins-ser{
-      height: 359px;
+      height: 332px;
     }
     .colun2{
       margin-left: 10rem;
       margin-top: -13.4rem;
     }
     .colun1{
-      margin-top: -19rem;
+      margin-top: -18.9rem;
       margin-left: 9rem;
     }
     .serv-p{
@@ -282,7 +282,7 @@
     .serv-fron  {
       margin-top: 8rem;
       margin-left: 0rem;
-      height: 323px;
+      height: 256px;
     }
     .ins  {
       margin-top: 2rem;
@@ -299,7 +299,7 @@
       margin-left: 1rem;
     }
   }
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 376px){
     .tit-ser{
       font-size: 3.4rem;
       margin-top: -9rem;
@@ -309,7 +309,7 @@
       margin-top: -6.3rem;
     }
     .serv-fron{
-      height: 254px;
+      height: 268px;
     }
     .ins{
       margin-left: 0rem;
@@ -327,9 +327,15 @@
     .text-inf p {
       margin-left: 0rem;
     }
+    .chos{
+      margin-left: -4.4rem;
+    }
   }
 
   @media screen and (max-width: 360px){
+    .serv-fron{
+      height: 268px;
+    }
     .tit-ser{
       font-size: 3.4rem;
       margin-top: -9rem;
