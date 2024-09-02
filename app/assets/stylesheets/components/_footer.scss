@@ -124,8 +124,8 @@ section {
   text-decoration: none;;
 }
 
-.footer-distributed .footer-links a:before {
-  content: "|";
+.footer-distributed .footer-links a::before {
+  content: "";
   font-weight:300;
   font-size: 20px;
   left: 0;
@@ -208,4 +208,7 @@ section {
     margin-right: 0rem;
     font-size: 1.1rem;
  }
+ .phone{
+  margin-left: -3rem;
+}
 }
