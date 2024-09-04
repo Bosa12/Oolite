@@ -237,6 +237,7 @@
     }
   }
 
+
   @media screen and (max-width: 430px) {
     .tit-ser{
       font-size: 3.4rem;
@@ -299,6 +300,7 @@
       margin-left: 1rem;
     }
   }
+
   @media screen and (max-width: 376px){
     .tit-ser{
       font-size: 3.4rem;
@@ -318,7 +320,7 @@
 
     .colun2{
       margin-top: -13.4rem;
-      margin-left: 8rem;
+      margin-left: 7.9rem;
     }
     .colun1{
       margin-top: -18.9rem;
@@ -332,7 +334,7 @@
     }
   }
 
-  @media screen and (max-width: 360px){
+  @media screen and (min-width: 360px){
     .serv-fron{
       height: 268px;
     }
@@ -360,7 +362,7 @@
 
     }
     .colun2{
-      margin-left: 8rem;
+      margin-left: 7.7rem;
       margin-top: -13.2rem;
     }
     .ser-p{
@@ -370,6 +372,16 @@
       margin-top: -18.9rem;
     }
   }
+
+  @media screen and (max-width: 355px){
+    .colun2{
+      margin-left: 7.5rem;
+    }
+    .ser-p{
+      margin-left: 2rem;
+    }
+  }
+
   @media screen and (max-width: 430px) {
   .responsive-text {
     font-size: 0.99rem;
