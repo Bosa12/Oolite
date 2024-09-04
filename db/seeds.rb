@@ -90,7 +90,7 @@ images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571611/pzgeith
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571847/20160209_085645_yjnvrx.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571784/20221108_123712_zdgjqp.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571847/20160122_173522_o9pptn.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/AirBrush_20230505190714_relavo.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725214157/production/wja985rfldzorqhkfy8b1vlsqebo.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571830/IMG-20240507-WA0000_uqv4li.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571814/20240609_173822_wzm0no.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492686/20240329_155824_1_yfqd1x.jpg",
@@ -109,12 +109,12 @@ images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571611/pzgeith
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767155/20171204_163239_ltlkzm.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571832/20240609_174300_1_pv9fjk.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872954/WhatsApp_Image_2024-08-05_at_16.32.22_gwul4s.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767158/20170620_151840_qtlb0r.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571876/DJI_0200-min_2305843009213810322_gc7u7v.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571760/20191130_112409_q87ujg.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571767/20210505_175817_z1og5y.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571788/20230605_130701_2_tk2f1q.jpg",
           'https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174130_s8jxbq.jpg',
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571829/20240609_174139_rhqoxl.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174044_tiuyts.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571824/20240609_173934_siy3ya.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571822/20240609_174027_a40mvn.jpg",
@@ -133,7 +133,7 @@ images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571611/pzgeith
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767161/fencing_ksp5i4.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722357049/wall_qawlnx.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571782/20220519_172244_meerxa.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725213034/development/gaautut52bbbn2a6sutl020zmkob.jpg"]
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722502254/20240708_142818_kzcsq2.jpg"]
 
 
 images.each do |image_path|
