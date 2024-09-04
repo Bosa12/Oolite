@@ -121,7 +121,6 @@ images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571611/pzgeith
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571817/20240609_173852_bvelqq.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493128/20230721_161525_v7jnlz.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493126/20210805_133239_py2pem.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493126/20210805_133239_py2pem.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493123/20220216_082243_skjbpb.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872965/WhatsApp_Image_2024-08-05_at_16.35.05_askdrr.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571610/hl2b0f10bmbw1is3pcb0.jpg",
@@ -132,6 +131,10 @@ images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571611/pzgeith
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767149/20160525_110836_vvdktx.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767143/20191125_120607_vqyge3.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767161/fencing_ksp5i4.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722357049/wall_qawlnx.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571782/20220519_172244_meerxa.jpg",
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725213034/development/gaautut52bbbn2a6sutl020zmkob.jpg"
+
           ]
 
 
