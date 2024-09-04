@@ -133,9 +133,7 @@ images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571611/pzgeith
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767161/fencing_ksp5i4.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722357049/wall_qawlnx.jpg",
           "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571782/20220519_172244_meerxa.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725213034/development/gaautut52bbbn2a6sutl020zmkob.jpg"
-
-          ]
+          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725213034/development/gaautut52bbbn2a6sutl020zmkob.jpg"]
 
 
 images.each do |image_path|
