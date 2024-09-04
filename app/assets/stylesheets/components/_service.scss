@@ -334,7 +334,7 @@
     }
   }
 
-  @media screen and (min-width: 360px){
+  @media screen and (max-width: 360px){
     .serv-fron{
       height: 268px;
     }
@@ -373,7 +373,7 @@
     }
   }
 
-  @media screen and (max-width: 355px){
+  @media screen and (max-width: 358px){
     .colun2{
       margin-left: 7.5rem;
     }
