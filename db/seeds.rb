@@ -1,59 +1,28 @@
 require 'open-uri'
-
 # project_types = ['Full Refurbishment', 'Kitchen Refurbishment', 'Bathroom Refurbishment']
 # project_types.each do |type|
 #   ProjectType.find_or_create_by(name: type)
 # end
-
 # puts "Creating projects..."
 # projects = [
 #   {
 #     name: "Kitchen Refurbishment",
 #     description: "Upgrade your kitchen with modern, stylish renovations.",
 #     project_type_id: ProjectType.find_by(name: 'Kitchen Refurbishment').id,
-#     images: ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571611/pzgeithnnz45v6mwohzm.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571857/20160930_130813_dv7fu3.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571847/20160209_085645_yjnvrx.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571784/20221108_123712_zdgjqp.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571779/20220217_161209_2_macvzr.jpg",
+#     images: []
 #   },
 #   {
 #     name: "Bathoroom Refurbishment",
 #     description: "Upgrade your bathroom with modern, stylish renovations.",
 #     project_type_id: ProjectType.find_by(name: 'Bathroom Refurbishment').id,
-#     images: ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/AirBrush_20230505190714_relavo.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571849/20160930_130557_a9jji1.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571852/20160106_123930_wxmifn.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571830/IMG-20240507-WA0000_uqv4li.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571814/20240609_173822_wzm0no.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571811/20240609_173746_zdnh3n.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492686/20240329_155824_1_yfqd1x.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722873286/WhatsApp_Image_2024-08-05_at_16.50.04_czfncu.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722873286/WhatsApp_Image_2024-08-05_at_16.49.21_uhg2mj.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722873263/WhatsApp_Image_2024-08-05_at_16.51.11_nm42mk.jpg",]
+#     images: []
 #   },
 #   {
 #     name: "Full  Refurbishment",
 #     description: "Upgrade your home with modern, stylish renovations.",
 #     project_type_id: ProjectType.find_by(name: 'Full Refurbishment').id,
-#     images: ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/20240609_174300_rxmbbj.jpg",
-#              'https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174130_s8jxbq.jpg',
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174044_tiuyts.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571824/20240609_173934_siy3ya.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571822/20240609_174027_a40mvn.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571817/20240609_173852_bvelqq.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493128/20230721_161525_v7jnlz.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571788/20230605_130701_2_tk2f1q.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493126/20210805_133239_py2pem.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493123/20220216_082243_skjbpb.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767137/pier_xv6zzd.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872954/WhatsApp_Image_2024-08-05_at_16.32.22_gwul4s.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872966/WhatsApp_Image_2024-08-05_at_16.40.16_wjzqzy.jpg",
-#              "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722875487/2024-08-05_at_17.27.04_monaat.jpg",]
-
+#     images: []
 #   }
-
 # ]
 # puts "Creating images..."
 # # Criando projetos e associando as imagens
@@ -76,78 +45,74 @@ require 'open-uri'
 #     )
 #   end
 # end
-
 #  puts "Seeds created successfully!"
-
 puts "Populando galeria..."
 Gallery.destroy_all
-
-
-images = ["https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571611/pzgeithnnz45v6mwohzm.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557944/WhatsApp_Image_2024-09-05_at_05.41.27_lsrgzn.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725478051/WhatsApp_Image_2024-08-05_at_17.06.35_mv1wsq.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557943/WhatsApp_Image_2024-09-05_at_05.37.05_hwalor.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557941/WhatsApp_Image_2024-09-05_at_05.34.22_a2ud9r.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571847/20160209_085645_yjnvrx.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557941/WhatsApp_Image_2024-09-05_at_05.33.19_vby7xj.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725214157/production/wja985rfldzorqhkfy8b1vlsqebo.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557941/WhatsApp_Image_2024-09-05_at_05.33.48_hafn60.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571830/IMG-20240507-WA0000_uqv4li.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557942/WhatsApp_Image_2024-09-05_at_05.36.04_jcvxse.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557943/WhatsApp_Image_2024-09-05_at_05.35.10_dsn2dy.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571857/20160930_130813_dv7fu3.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725554478/20231207_130019_lgzvej.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571852/20160106_123930_wxmifn.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557942/WhatsApp_Image_2024-09-05_at_05.39.06_qpiykp.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571784/20221108_123712_zdgjqp.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557942/WhatsApp_Image_2024-09-05_at_05.40.35_iu6chc.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492686/20240329_155824_1_yfqd1x.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571847/20160122_173522_o9pptn.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722873263/WhatsApp_Image_2024-08-05_at_16.51.11_nm42mk.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722873286/WhatsApp_Image_2024-08-05_at_16.50.04_czfncu.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722873286/WhatsApp_Image_2024-08-05_at_16.49.21_uhg2mj.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/e_improve,c_thumb,g_auto/v1719571781/20220307_115116_wrjako.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571877/IMG-20220211-WA0000_002_djiedp.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767137/20210212_155431_002_ruozka.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725557942/WhatsApp_Image_2024-09-05_at_05.40.05_nen69n.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767137/pier_xv6zzd.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722875487/2024-08-05_at_17.27.04_monaat.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571834/AirBrush_20221018171557_td1dsn.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571814/20240609_173822_wzm0no.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767155/20171204_163239_ltlkzm.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571832/20240609_174300_1_pv9fjk.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571849/20160930_130557_a9jji1.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872954/WhatsApp_Image_2024-08-05_at_16.32.22_gwul4s.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571876/DJI_0200-min_2305843009213810322_gc7u7v.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571760/20191130_112409_q87ujg.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571811/20240609_173746_zdnh3n.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571767/20210505_175817_z1og5y.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571788/20230605_130701_2_tk2f1q.jpg",
-          'https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174130_s8jxbq.jpg',
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571829/20240609_174139_rhqoxl.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571825/20240609_174044_tiuyts.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571824/20240609_173934_siy3ya.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571822/20240609_174027_a40mvn.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571817/20240609_173852_bvelqq.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493128/20230721_161525_v7jnlz.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493126/20210805_133239_py2pem.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722493123/20220216_082243_skjbpb.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571610/hl2b0f10bmbw1is3pcb0.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722872966/WhatsApp_Image_2024-08-05_at_16.40.16_wjzqzy.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492857/20231208_164843_2_scxpok.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722492862/20160523_150055_gj3q3m.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767149/20160525_110836_vvdktx.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767143/20191125_120607_vqyge3.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722767161/fencing_ksp5i4.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722357049/wall_qawlnx.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1719571782/20220519_172244_meerxa.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725478003/2024-08-05_at_17.03.45_b6p4tz.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1725477972/WhatsApp_Image_2024-08-05_at_16.45.50_rgbxcr.jpg",
-          "https://res.cloudinary.com/dc6nbm8zp/image/upload/v1722502254/20240708_142818_kzcsq2.jpg"]
-
-
+images = ["https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066112/dyjcvms15vpcofjg3c4a.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066110/ilpjpvgxvjd06wkprxyr.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/dxx6qudqmgbexuhyoykv.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/no9c4riw3inbnxhgpnwt.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/nqnwtsiilyr2ldwx5wfo.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066110/b3gcm0eupvumzfwzmkgw.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/jmld4uxqpbbbniwtnohf.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066110/x3smhpflbhumucqjvau5.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066109/vyjitso2o0pbvguzkg6z.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066109/wl4kxhrjkrctkqg0fhv3.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066109/lxalxzq8z94d9n9as83z.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066109/dw3zu5ffj5dqkwy2qdht.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066109/alqjuknmuxxetnlya5zk.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066108/ssbycvdie0bliozqclns.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066108/wxvshbp8foblpo9vbfpr.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066108/r0cqkygofye7bwmzg8ve.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066108/rgmlv9xrw7r9vrhq2qmg.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066107/wotiqmqvrhzjxyoiijnl.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066107/nyix8u42xjcpemavdhcz.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066107/vzpxlgtk40ag9jwz9o6n.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066107/ui1nrgsznw3myncpegzr.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066106/kylg5ho19fjymapdiyzs.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066107/p1z9zbjq4ez7xnf82jg0.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066106/hbgmg2mfdnwqxvxbh0zy.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066105/kulpj6c0hradosirsqsq.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066105/nefuiboffxpng29bfiyr.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066104/m8etlr0nc2foxb31pxqg.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066103/qjyumiarw9hb1tpazozk.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066103/zmttstrpteefxqykkyqz.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066102/ihbhtx9lyyadipamn9aa.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066101/r7l7zts0uw1tbzpoozdd.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066099/y0dhglo0erfnpws1jy7k.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066099/sbdyjcplpmwi7l5wajqw.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066095/zho4vrow7ns3l9cfwqi1.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066093/vi7ouistpb0gb0n7kbmf.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066091/u9lv6rnk3zzeuuvfdjh2.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066095/zho4vrow7ns3l9cfwqi1.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066091/jncqz5imbfbuqbnoqosj.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066088/pskxy4ex19ikegwprxdi.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066088/w3ukilgakipfg2tm8qnf.jpg",
+          'https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066083/frsom2bmgewkl0gfy85q.jpg',
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066081/vvmai5ypycxbsj22whrz.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066081/ztbia1p9rycakaj0epmz.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066074/yqpa2kghomvyml0sizrz.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066077/kvmpsf660rkptunjlwuh.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066074/lejv19ri0kez53erfrg9.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066072/ix0f5z3bsnqopozomeud.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066070/fi8rlgmwgogsdbasxsym.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066066/pdp2onnomck8fwbetm5n.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066069/poei1lavi2uigqlk9c0a.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066064/uhngqidhlmhcqwq4osid.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066064/fbamejqsu2leuyl4xtq8.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066063/t18pjemdtpmobmaetjqe.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066061/afwxinmypheaagf1izhu.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066058/hjhqvglsp569yonkkivj.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066055/ftcg1v89q6s5t0lpqxrx.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066054/thsqmch9s4e4anyrqmg5.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066052/qgmgqo3ufrhefzkrkddi.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066052/lbau1qyk6coqlsfl5eiy.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066052/rbpyc5k2gwsrnqzw3ynx.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066052/cpcxsyclrfa3mmlf74gq.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066053/tomoaw6vjmvy4iw11cty.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066063/t18pjemdtpmobmaetjqe.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066055/ftcg1v89q6s5t0lpqxrx.jpg"]
 images.each do |image_path|
   Gallery.create(photo: image_path, description: "This picture for gallery") # COLUNA DESCRIPTION PARA CASO PRECISE ADICIONAR UM COMENTARIO OU EXPLICACAO SOBRE A IMAGEM
 end
-
 puts "Galeria populada com #{Gallery.count} imagens."

@@ -1,21 +1,11 @@
-// .logo{
-//   width: 50%;
-//   text-align: center;
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-// @media screen and (min-width: 420px){
-//   .logo{
-//     width: 100%;
-//     margin: auto;
-//     height: auto;
-//   }
-// }
-// @media screen and (min-width: 1280px){
-//   .logo{
-//     width: 100%;
-//     margin-left: 1rem;
-//     height: auto;
-//   }
-// }
+.logo{
+  width: auto;
+  max-width: 400px;
+}
+@media screen and (min-width: 420px) and (max-width: 1580px) {
+  .logo{
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+}
