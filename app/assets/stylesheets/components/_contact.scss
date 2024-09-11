@@ -10,3 +10,37 @@
   border-color: #28a745;
   border-radius: 2px 5px 12px;
 }
+.send{
+  margin-left: 21rem;
+
+}
+@media screen and (max-width: 360px){
+
+  .send{
+    margin-left: 7rem;
+  }
+}
+@media screen and (max-width: 375px){
+
+  .send{
+    margin-left: 7rem;
+  }
+}
+@media screen and (max-width: 430px){
+
+  .send{
+    margin-left: 8rem;
+  }
+}
+@media screen and (max-width: 820px){
+
+  .send{
+    margin-left: 16rem;
+  }
+}
+@media screen and (max-width: 1180px){
+
+  .send{
+    margin-left: 16rem;
+  }
+}
