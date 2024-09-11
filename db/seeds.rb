@@ -84,7 +84,6 @@ images = ["https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066112/dyjcvms
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066095/zho4vrow7ns3l9cfwqi1.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066093/vi7ouistpb0gb0n7kbmf.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066091/u9lv6rnk3zzeuuvfdjh2.jpg",
-          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066095/zho4vrow7ns3l9cfwqi1.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066091/jncqz5imbfbuqbnoqosj.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066088/pskxy4ex19ikegwprxdi.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066088/w3ukilgakipfg2tm8qnf.jpg",
