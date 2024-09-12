@@ -366,6 +366,16 @@
       font-size: 0.99rem;
     }
   }
+  @media screen and (max-width: 391px){
+    .chos{
+      margin-left: -4.0rem;
+    }
+  }
+  @media screen and (max-width: 390px){
+    .chos{
+      margin-left: -4.0rem;
+    }
+  }
 
   @media screen and (max-width: 375px) {
     .tit-ser {
@@ -395,7 +405,7 @@
       margin-left: 0rem;
     }
     .chos {
-      margin-left: -4.4rem;
+      margin-left: -5.0rem;
     }
     .teamwor {
       display: block !important;

@@ -233,7 +233,23 @@ section {
   .footer-icons {
     display: flex;
     justify-content: flex-start;
-    margin-left: 6.7rem;
+    margin-left: 5.7rem;
+  }
+}
+@media screen and (max-width: 391px){
+  .footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5.4rem;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5rem;
   }
 }
 
@@ -244,14 +260,6 @@ section {
     margin-left: 5rem;
   }
 }
-@media screen and (max-width: 390px) {
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 5rem;
-  }
-}
-
 @media screen and (max-width: 360px) {
   .footer-icons {
     display: flex;
