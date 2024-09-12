@@ -253,6 +253,22 @@ section {
   }
 }
 
+@media screen and (max-width: 382px) {
+  .footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5rem;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .footer-icons {
     display: flex;
