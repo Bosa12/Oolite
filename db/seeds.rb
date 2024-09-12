@@ -52,7 +52,6 @@ images = ["https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066112/dyjcvms
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726173509/r98bqz83pfdxfxpvgt8i.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066110/ilpjpvgxvjd06wkprxyr.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/dxx6qudqmgbexuhyoykv.jpg",
-          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726173509/r98bqz83pfdxfxpvgt8i.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/no9c4riw3inbnxhgpnwt.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/nqnwtsiilyr2ldwx5wfo.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066110/b3gcm0eupvumzfwzmkgw.jpg",
