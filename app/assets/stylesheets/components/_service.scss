@@ -132,6 +132,7 @@
   p{
     margin-left: 1rem;
     row-gap: 1.3rem;
+    padding: 5px 5px 5px 5px;
     }
   }
   .img-insd{
@@ -209,7 +210,7 @@
     margin-top: -10rem;
     }
     .chos{
-      margin-left: -4rem;
+      margin-left: -3rem;
     }
   }
 
@@ -309,6 +310,7 @@
     }
     .ser-p {
       margin-left: 3.1rem;
+      margin-top: -11rem;
     }
     .img-fluid {
       margin-left: -3rem;
@@ -365,7 +367,7 @@
     }
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 375px) {
     .tit-ser {
       font-size: 3.4rem;
       margin-top: -9rem;
@@ -436,6 +438,7 @@
     }
     .ser-p {
       margin-left: 2.7rem;
+      margin-top: -9rem;
     }
     .colun1 {
       margin-top: -18.9rem;
