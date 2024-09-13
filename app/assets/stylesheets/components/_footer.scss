@@ -247,7 +247,7 @@ section {
 }
 @media screen and (max-width: 396px){
   .footer-icons {
-    margin-left: 5.8rem;
+    margin-left: 5rem;
   }
 }
 @media screen and (max-width: 392px){
@@ -300,6 +300,14 @@ section {
     display: flex;
     justify-content: flex-start;
     margin-left: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3.8rem;
   }
 }
 @media screen and (min-width: 350px) and (max-width: 430px) {
