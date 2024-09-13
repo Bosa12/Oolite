@@ -305,10 +305,10 @@ section {
   .footer-icons {
     display: flex;
     justify-content: flex-start;
-    margin-left: 4.5rem;
+    margin-left: 4.2rem;
   }
 }
-@media screen and (max-width: 347px) {
+@media screen and (max-width: 350px) and (min-width: 359px) {
   .footer-icons {
 
     margin-left: 4.2rem;
