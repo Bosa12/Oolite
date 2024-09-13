@@ -48,8 +48,7 @@ require 'open-uri'
 #  puts "Seeds created successfully!"
 puts "Populando galeria..."
 Gallery.destroy_all
-images = ["https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066112/dyjcvms15vpcofjg3c4a.jpg",
-          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726173509/r98bqz83pfdxfxpvgt8i.jpg",
+images = ["https://res.cloudinary.com/dskz2xkp0/image/upload/v1726173509/r98bqz83pfdxfxpvgt8i.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066110/ilpjpvgxvjd06wkprxyr.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/dxx6qudqmgbexuhyoykv.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/no9c4riw3inbnxhgpnwt.jpg",
@@ -86,7 +85,6 @@ images = ["https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066112/dyjcvms
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066095/zho4vrow7ns3l9cfwqi1.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066093/vi7ouistpb0gb0n7kbmf.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066091/u9lv6rnk3zzeuuvfdjh2.jpg",
-          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066091/jncqz5imbfbuqbnoqosj.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066088/pskxy4ex19ikegwprxdi.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066088/w3ukilgakipfg2tm8qnf.jpg",
           'https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066083/frsom2bmgewkl0gfy85q.jpg',
@@ -111,7 +109,6 @@ images = ["https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066112/dyjcvms
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066052/rbpyc5k2gwsrnqzw3ynx.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066052/cpcxsyclrfa3mmlf74gq.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066053/tomoaw6vjmvy4iw11cty.jpg",
-          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066063/t18pjemdtpmobmaetjqe.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066055/ftcg1v89q6s5t0lpqxrx.jpg"]
 images.each do |image_path|
   Gallery.create(photo: image_path, description: "This picture for gallery") # COLUNA DESCRIPTION PARA CASO PRECISE ADICIONAR UM COMENTARIO OU EXPLICACAO SOBRE A IMAGEM
