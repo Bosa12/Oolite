@@ -236,6 +236,15 @@ section {
     margin-left: 6.7rem;
   }
 }
+
+
+@media screen and (max-width: 410px) {
+  .footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 6rem;
+  }
+}
 @media screen and (max-width: 391px){
   .footer-icons {
     display: flex;
