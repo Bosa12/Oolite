@@ -235,6 +235,9 @@ section {
     justify-content: flex-start;
     margin-left: 6.2rem;
   }
+  .footer-distributed .footer-center  {
+    margin-left: 1rem;
+  }
 }
 
 
@@ -300,6 +303,9 @@ section {
 
     margin-left: 4.5rem;
   }
+  .footer-distributed .footer-center  {
+    margin-left: 1rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .footer-icons {
@@ -307,8 +313,12 @@ section {
     justify-content: flex-start;
     margin-left: 4.4rem;
   }
+  .footer-distributed .footer-center  {
+    margin-left: 1rem;
+  }
 }
-@media screen and (max-width: 350px) and (min-width: 359px) {
+
+@media screen and (max-width: 351px) {
   .footer-icons {
 
     margin-left: 4.2rem;
