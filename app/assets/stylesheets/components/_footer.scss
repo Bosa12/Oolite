@@ -208,7 +208,7 @@ section {
   height: 100%;
   border-radius: 10%;
 }
-@media screen and (min-width: 1182px) and (max-width: 1600px) {
+@media screen and (min-width: 1182px) and (max-width: 1820px) {
   .footer-icons{
     margin-left: 1.0rem;
   }
@@ -229,107 +229,6 @@ section {
 }
 
 
-@media screen and (max-width: 430px) {
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 6.2rem;
-  }
-  .footer-distributed .footer-center  {
-    margin-left: 1rem;
-  }
-}
-
-
-@media screen and (max-width: 410px) {
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 6rem;
-  }
-}
-@media screen and (max-width: 396px){
-  .footer-icons {
-    margin-left: 5rem;
-  }
-}
-@media screen and (max-width: 392px){
-  .footer-icons {
-    margin-left: 5.4rem;
-  }
-}
-@media screen and (max-width: 391px){
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 5.4rem;
-  }
-}
-
-
-@media screen and (max-width: 390px) {
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 5.5rem;
-  }
-}
-
-@media screen and (max-width: 382px) {
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 5rem;
-  }
-}
-
-@media screen and (max-width: 381px) {
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 5.1rem;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 5rem;
-  }
-}
-@media screen and (max-width: 361px) {
-  .footer-icons {
-
-    margin-left: 4.5rem;
-  }
-  .footer-distributed .footer-center  {
-    margin-left: 1rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .footer-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 4.4rem;
-  }
-  .footer-distributed .footer-center  {
-    margin-left: 1rem;
-  }
-}
-
-@media screen and (max-width: 351px) {
-  .footer-icons {
-
-    margin-left: 4.2rem;
-  }
-}
-@media screen and (max-width: 340px) {
-  .footer-icons {
-
-    margin-left: 3.8rem;
-  }
-}
 @media screen and (min-width: 350px) and (max-width: 430px) {
 
   .logo-image{
