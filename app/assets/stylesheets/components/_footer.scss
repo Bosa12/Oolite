@@ -179,7 +179,11 @@ section {
   margin-right: 3px;
   margin-bottom: 5px;
 }
-
+.insta{
+  display: flex;
+  margin-left: 1rem;
+  font-family:  Open Sans;
+}
 @media (max-width: 820px) {
 
   .footer-distributed{
@@ -221,6 +225,11 @@ section {
   }
 }
 
+@media screen and (max-width: 820px) {
+  .phone{
+   margin-left: -3rem;
+  }
+ }
 
 @media screen and (max-width: 820px){
   .footer-icons{
@@ -228,7 +237,26 @@ section {
   }
 }
 
-
+@media screen and (max-width: 360px){
+  .footer-icons{
+    margin-left: -3.2rem;
+  }
+}
+@media screen and (max-width: 375px){
+  .footer-icons{
+    margin-left: -3.2rem;
+  }
+}
+@media screen and (max-width: 390px){
+  .footer-icons{
+    margin-left: -3.2rem;
+  }
+}
+@media screen and (max-width: 428px){
+  .footer-icons{
+    margin-left: -3.1rem;
+  }
+}
 @media screen and (min-width: 350px) and (max-width: 430px) {
 
   .logo-image{
@@ -246,9 +274,4 @@ section {
   margin-left: -3rem;
   }
 
-}
-@media screen and (max-width: 820px) {
- .phone{
-  margin-left: -3rem;
- }
 }
