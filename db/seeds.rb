@@ -48,7 +48,8 @@ require 'open-uri'
 #  puts "Seeds created successfully!"
 puts "Populando galeria..."
 Gallery.destroy_all
-images = ["https://res.cloudinary.com/dskz2xkp0/image/upload/v1726173509/r98bqz83pfdxfxpvgt8i.jpg",
+images = ["https://res.cloudinary.com/dskz2xkp0/image/upload/v1728642447/WhatsApp_Image_2024-10-09_at_13.19.41_wolo8x.jpg",
+          "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726173509/r98bqz83pfdxfxpvgt8i.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066110/ilpjpvgxvjd06wkprxyr.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/dxx6qudqmgbexuhyoykv.jpg",
           "https://res.cloudinary.com/dskz2xkp0/image/upload/v1726066111/no9c4riw3inbnxhgpnwt.jpg",
