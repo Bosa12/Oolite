@@ -61,6 +61,9 @@ Rails.application.configure do
   # Assume all access to the app is happening through a SSL-terminating reverse proxy.
   # Can be used together with config.force_ssl for Strict-Transport-Security and secure cookies.
   # config.assume_ssl = true
+  # Autoriza a aplicação a responder por esse nome
+    config.hosts << "www.oolite-racing.co.uk"
+    config.hosts << "oolite-racing.co.uk"
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = false
