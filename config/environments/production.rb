@@ -64,6 +64,8 @@ Rails.application.configure do
   # Autoriza a aplicação a responder por esse nome
     config.hosts << "www.oolite-racing.co.uk"
     config.hosts << "oolite-racing.co.uk"
+    config.hosts << "www.oolite.co.uk"
+    config.hosts << "oolite.co.uk"       
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = false
