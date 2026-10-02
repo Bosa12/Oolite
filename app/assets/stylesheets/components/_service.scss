@@ -221,4 +221,12 @@ ul { padding-left: 0; list-style: none; }
   .colun2 { margin-left: 7.5rem; }
   .ser-p  { margin-left: 2rem; }
 }
- 
+ @media (max-width: 768px) {
+  .void-intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+    letter-spacing: -0.9em;
+  }
+}
